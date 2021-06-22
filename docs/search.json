@@ -1,20 +1,19 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
-      "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-06-22T16:04:21+02:00"
-    },
-    {
       "path": "index.html",
       "title": "Vincent Bagilet",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-06-22T16:04:21+02:00"
+      "contents": "\n\n          \n      \n      Vincent Bagilet\n      \n      \n      Home\n      Research\n      Code\n      CV\n      ☰\n      \n      \n      \n        \n          \n            \n              \n            \n              Vincent Bagilet\n            \n            \n              \n                \n                    \n                      \n                         Email\n                      \n                    \n                  \n                                    \n                    \n                      \n                         GitHub\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            I am a 3rd year PhD student in sustainable development at Columbia University’s School of International and Public Affairs (SIPA).\n            \n            Education\n            PhD Student in Sustainable Development - Columbia University\n            MSc in Economics - Paris School of Economics\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Vincent Bagilet\n            \n            \n              \n                \n                                    \n                    \n                       Email\n                    \n                  \n                                    \n                    \n                       GitHub\n                    \n                  \n                                  \n              \n            \n            \n              I am a 3rd year PhD student in sustainable development at Columbia University’s School of International and Public Affairs (SIPA).\n              \n              Education\n              PhD Student in Sustainable Development - Columbia University\n              MSc in Economics - Paris School of Economics\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-06-22T17:53:35+02:00"
+    },
+    {
+      "path": "research.html",
+      "title": "Reaserch",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\nThe\n\n\n\n",
+      "last_modified": "2021-06-22T17:53:37+02:00"
     }
   ],
   "collections": []

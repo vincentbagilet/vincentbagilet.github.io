@@ -1,18 +1,29 @@
 ---
 title: "Vincent Bagilet"
-description: |
-  Welcome to the website. I hope you enjoy it!
+image: "photo_site.jpg"
+angle: 130
 site: distill::distill_website
+links:
+  - label: '`r fontawesome::fa("envelope")` Email'
+    url: "mailto:vincent.bagilet@columbia.edu"
+  - label: '`r fontawesome::fa("github")` GitHub'
+    url: "https://github.com/vincentbagilet"
+output:
+  postcards::trestles
 ---
+ 
+I am a 3rd year PhD student in sustainable development at Columbia University's School of International and Public Affairs (SIPA).
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+## Education
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
+- PhD Student in Sustainable Development - Columbia University
+- MSc in Economics - Paris School of Economics
 
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
 
-```
+
+
+
+
+
+
 
