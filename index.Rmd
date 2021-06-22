@@ -1,6 +1,6 @@
 ---
 title: "Vincent Bagilet"
-image: "photo_site.jpg"
+image: "photo_site_round.png"
 angle: 130
 site: distill::distill_website
 links:

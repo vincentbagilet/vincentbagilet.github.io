@@ -1,11 +1,16 @@
 ---
-title: "Reaserch"
-description: |
-  Some additional details about the website
+title: "Research"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-- The
+# Ongoing projects
+
+- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version]()
+- The 
+
+# Published papers
+
+-

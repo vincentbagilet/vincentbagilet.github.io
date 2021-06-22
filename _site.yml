@@ -5,13 +5,14 @@ description: |
   Vincent Bagilet
 output_dir: "docs"
 navbar:
+  # logo: "one_up.png"
   right:
     - text: "Home"
       href: index.html
     - text: "Research"
       href: research.html
-    - text: "Code"
-      href: code.html
+    - text: "Projects"
+      href: projects.html
     - text: "CV"
       href: "CV_Vincent_Bagilet.pdf"
   # source_url: https://github.com/vincentbagilet/vincentbagilet_website
