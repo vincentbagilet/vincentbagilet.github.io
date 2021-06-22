@@ -1,0 +1,12 @@
+name: "personal_website"
+title: "Vincent Bagilet"
+description: |
+  Vincent Bagilet
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
