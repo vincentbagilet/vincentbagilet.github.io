@@ -16,13 +16,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I created a small package providing a ready to use ggplot theme, [mediocrethemes](https://vincentbagilet.github.io/mediocrethemes/).  More info can be found on the package website.
+I created a small package providing a ready to use ggplot themes, `mediocrethemes`. The resulting themes are, in my opinion, not strikingly nice but, hopefully, not strikingly ugly either, hence why the name of the package. More info and vignettes to get familiar with the package can be found on the [package website](https://vincentbagilet.github.io/mediocrethemes/).
 
-I built a function, `set_mediocre_all()`, such that, when called at the beginning of the code, sets the new theme for all subsequent graphs. All graphs are therefore in the new theme, without any additional line of code.
-
-I tried to build a reproducible code. Users should be able to adapt my code to their own theme if they want to. The code for this package can be find on [GitHub](https://github.com/vincentbagilet/mediocrethemes).
-
-Here are a couple of example plots of the theme and main color scale used.
+Here are a couple of example plots of the theme and main color scale used but much more can be seen on the [package website](https://vincentbagilet.github.io/mediocrethemes/).
 
 ```{r}
 library(ggplot2)
@@ -39,7 +35,9 @@ ggplot(data = ggplot2::mpg, aes(x = cty, y = displ)) +
     labs(title = "A very nice title", subtitle = "A disappointing subtitle")
 ```
 
+To me, the most useful feature of my package is the function, `set_mediocre_all()`. When called at the beginning of the code, all subsequent graphs will be created using the new theme, without any additional line of code. This enables users to depart very easily from the nice but too often seen base ggplot themes and color schemes.
 
+I also tried to build my code so that it is reproducible. Users should be able to adapt it to create their own theme if they want to. The code for this package can be find on [GitHub](https://github.com/vincentbagilet/mediocrethemes).
 
 
 

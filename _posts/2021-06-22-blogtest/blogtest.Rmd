@@ -1,7 +1,8 @@
 ---
-title: "blog_test"
+title: "Test of a blog-type of post"
 description: |
   A short description of the post.
+preview: "mountain.jpg"
 author:
   - name: Vincent Bagilet
 date: 06-22-2021

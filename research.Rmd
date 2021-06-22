@@ -8,9 +8,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Ongoing projects
 
-- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version]()
-- The 
+- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version of the working paper](gold.jpg)
+- Jason Momoa against Henry Cavill
 
 # Published papers
 
--
+- Nothing for now

@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/2021-06-22-blogtest/",
-    "title": "blog_test",
+    "title": "Test of a blog-type of post",
     "description": "A short description of the post.",
     "author": [
       {
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-06-22T18:54:41+02:00",
+    "last_modified": "2021-06-22T23:46:02+02:00",
     "input_file": {}
   },
   {
@@ -28,9 +28,9 @@
     ],
     "date": "2021-06-22",
     "categories": [],
-    "contents": "\nI created a small package providing a ready to use ggplot theme, mediocrethemes. More info can be found on the package website.\nI built a function, set_mediocre_all(), such that, when called at the beginning of the code, sets the new theme for all subsequent graphs. All graphs are therefore in the new theme, without any additional line of code.\nI tried to build a reproducible code. Users should be able to adapt my code to their own theme if they want to. The code for this package can be find on GitHub.\nHere are a couple of example plots of the theme and main color scale used.\n\n\n\n\n\n\n",
+    "contents": "\nI created a small package providing a ready to use ggplot themes, mediocrethemes. The resulting themes are, in my opinion, not strikingly nice but, hopefully, not strikingly ugly either, hence why the name of the package. More info and vignettes to get familiar with the package can be found on the package website.\nHere are a couple of example plots of the theme and main color scale used but much more can be seen on the package website.\n\n\n\nTo me, the most useful feature of my package is the function, set_mediocre_all(). When called at the beginning of the code, all subsequent graphs will be created using the new theme, without any additional line of code. This enables users to depart very easily from the nice but too often seen base ggplot themes and color schemes.\nI also tried to build my code so that it is reproducible. Users should be able to adapt it to create their own theme if they want to. The code for this package can be find on GitHub.\n\n\n\n",
     "preview": "posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-06-22T23:07:03+02:00",
+    "last_modified": "2021-06-22T23:50:56+02:00",
     "input_file": {}
   }
 ]
