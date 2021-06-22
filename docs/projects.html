@@ -88,24 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Vincent Bagilet: Projects</title>
   
+  <meta property="description" itemprop="description" content="A list of short and simple descriptions of my (Vincent Bagilet) projects"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Vincent Bagilet: Projects"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A list of short and simple descriptions of my (Vincent Bagilet) projects"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Vincent Bagilet"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Vincent Bagilet: Projects"/>
+  <meta property="twitter:description" content="A list of short and simple descriptions of my (Vincent Bagilet) projects"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Projects"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","base_url","listing"]}},"value":[{"type":"character","attributes":{},"value":["Projects"]},{"type":"character","attributes":{},"value":["A list of short and simple descriptions of my (Vincent Bagilet) projects\n"]},{"type":"character","attributes":{},"value":["https://vincentbagilet.github.io/vincentbagilet_website/projects.html"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1872,7 +1875,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     rgba(0, 49, 60, 0.8);
+    --title-color:     rgba(0, 0, 0, 0.8);
     --header-color:    rgba(0, 0, 0, 0.8);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
@@ -1915,7 +1918,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(0, 49, 60, 0.8);
     --text-size:        18px;
     --hover-color:      gray;
-    --bkgd-color:       rgba(255, 255, 255, 0.8);   
+    --bkgd-color:       rgba(255, 255, 255, 0.8);
   }
   
   .distill-site-footer {
@@ -1929,11 +1932,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Add any additional CSS rules below                      */
   
   /* Postcard headers */
-  h1, h2 {
+  h1, h2, h3 {
     color: rgba(0, 49, 60, 0.8);
   }
   
-  </style>
+  /*body {
+    background-color: rgba(249, 250, 247, 0.8);
+  }*/</style>
   <style type="text/css">
   /* base style */
   
@@ -2108,7 +2113,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Projects","authors":[]}
+{"title":"Projects","description":"A list of short and simple descriptions of my (Vincent Bagilet) projects","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2282,6 +2287,23 @@ function init_posts_list() {
 <p>A short description of the post.</p>
 </div>
 </a>
+<a href="posts/2021-06-22-mediocrethemes/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">June 22, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Vincent Bagilet</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png"/>
+</div>
+<div class="description">
+<h2>mediocrethemes</h2>
+<div class="dt-tags"></div>
+<p>I made a small package providing not particularly nice and, hopefully, not particularly ugly ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.</p>
+</div>
+</a>
 </div>
 <div class="posts-more">
 <a href="#">More articles &raquo;</a>
@@ -2293,7 +2315,7 @@ function init_posts_list() {
 <h1>Projects</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>A list of short and simple descriptions of my (Vincent Bagilet) projects</p></p>
 </div>
 
 

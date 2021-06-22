@@ -15,5 +15,22 @@
     "preview": {},
     "last_modified": "2021-06-22T18:54:41+02:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2021-06-22-mediocrethemes/",
+    "title": "mediocrethemes",
+    "description": "I made a small package providing not particularly nice and, hopefully, not particularly ugly ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.",
+    "author": [
+      {
+        "name": "Vincent Bagilet",
+        "url": {}
+      }
+    ],
+    "date": "2021-06-22",
+    "categories": [],
+    "contents": "\nI created a small package providing a ready to use ggplot theme, mediocrethemes. More info can be found on the package website.\nI built a function, set_mediocre_all(), such that, when called at the beginning of the code, sets the new theme for all subsequent graphs. All graphs are therefore in the new theme, without any additional line of code.\nI tried to build a reproducible code. Users should be able to adapt my code to their own theme if they want to. The code for this package can be find on GitHub.\nHere are a couple of example plots of the theme and main color scale used.\n\n\n\n\n\n\n",
+    "preview": "posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-06-22T23:07:03+02:00",
+    "input_file": {}
   }
 ]
