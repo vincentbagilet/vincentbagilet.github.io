@@ -9,7 +9,7 @@ preview: "mountain.png"
 base_url: https://vincentbagilet.github.io/vincentbagilet_website
 author:
   - name: Vincent Bagilet
-date: 06-23-2021
+date: 2021-06-23
 citation: false
 output:
   distill::distill_article:

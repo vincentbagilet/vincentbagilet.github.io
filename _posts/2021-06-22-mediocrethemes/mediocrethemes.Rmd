@@ -9,7 +9,7 @@ categories:
 author:
   - name: Vincent Bagilet
     url: {https://vincentbagilet.github.io/vincentbagilet_website}
-date: 06-22-2021
+date: 2021-06-22
 citation: false
 output:
   distill::distill_article:
