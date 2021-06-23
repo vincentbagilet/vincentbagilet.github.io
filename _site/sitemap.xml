@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>https://vincentbagilet.github.io/vincentbagilet_website/</loc>
+    <lastmod>2021-06-22T23:43:51+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vincentbagilet.github.io/vincentbagilet_website/projects.html</loc>
+    <lastmod>2021-06-23T09:45:40+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vincentbagilet.github.io/vincentbagilet_website/research.html</loc>
+    <lastmod>2021-06-23T11:17:42+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest/</loc>
+    <lastmod>2021-06-23T11:18:37+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-mediocrethemes/</loc>
+    <lastmod>2021-06-23T11:40:41+02:00</lastmod>
+  </url>
+</urlset>

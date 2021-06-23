@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Vincent Bagilet</title>
+    <link>https://vincentbagilet.github.io/vincentbagilet_website</link>
+    <atom:link href="https://vincentbagilet.github.io/vincentbagilet_website/projects.xml" rel="self" type="application/rss+xml"/>
+    <description>Vincent Bagilet
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Test of a blog type of post</title>
+      <dc:creator>Vincent Bagilet</dc:creator>
+      <link>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest</link>
+      <description>A short description of the post.</description>
+      <category>Test</category>
+      <category>R</category>
+      <guid>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest</guid>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest/mountain.png" medium="image" type="image/png" width="1280" height="853"/>
+    </item>
+    <item>
+      <title>mediocrethemes</title>
+      <dc:creator>Vincent Bagilet</dc:creator>
+      <link>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-mediocrethemes</link>
+      <description>I created a small package providing not particularly nice and, hopefully, not particularly ugly ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.</description>
+      <category>R</category>
+      <category>Data viz</category>
+      <category>ggplot</category>
+      <guid>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-mediocrethemes</guid>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="3900" height="2400"/>
+    </item>
+  </channel>
+</rss>

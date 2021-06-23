@@ -2,11 +2,15 @@
 title: "Test of a blog type of post"
 description: |
   A short description of the post.
+categories:
+  - Test
+  - R
 preview: "mountain.png"
 base_url: https://vincentbagilet.github.io/vincentbagilet_website
 author:
   - name: Vincent Bagilet
 date: 06-23-2021
+citation: false
 output:
   distill::distill_article:
     self_contained: false
@@ -20,10 +24,6 @@ knitr::opts_chunk$set(echo = FALSE)
 Distill is a publication format for scientific and technical writing, native to the web.
 
 Learn more about using Distill at <https://rstudio.github.io/distill>.
-
-```{r, layout="l-body-outset", preview=TRUE}
-knitr::include_graphics(here::here("mountain.png"))
-```
 
 
 <!-- ```{r} -->
