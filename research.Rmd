@@ -6,11 +6,11 @@ title: "Research"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Ongoing projects
+# Work in progress
 
-- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version of the working paper](gold.jpg)
-- Jason Momoa against Henry Cavill
+- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version of the working paper](papers/inference_air_pollution.pdf)
+- A trade-off between omitted variable bias and type M error, with Léo Zabrocki.
 
 # Published papers
 
-- Nothing for now
+- I am still too much of a newbie for that...
