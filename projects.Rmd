@@ -2,6 +2,5 @@
 title: "Projects"  # any name you want here
 description: |
   A list of short and simple descriptions of my (Vincent Bagilet) projects
-base_url: https://vincentbagilet.github.io/vincentbagilet_website/projects.html
 listing: posts # do this exactly
 ---

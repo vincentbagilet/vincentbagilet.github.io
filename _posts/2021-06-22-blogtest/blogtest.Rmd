@@ -1,11 +1,12 @@
 ---
-title: "Test of a blog-type of post"
+title: "Test of a blog type of post"
 description: |
   A short description of the post.
-preview: "mountain.jpg"
+preview: "mountain.png"
+base_url: https://vincentbagilet.github.io/vincentbagilet_website
 author:
   - name: Vincent Bagilet
-date: 06-22-2021
+date: 06-23-2021
 output:
   distill::distill_article:
     self_contained: false
@@ -21,7 +22,7 @@ Distill is a publication format for scientific and technical writing, native to 
 Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 ```{r, layout="l-body-outset", preview=TRUE}
-knitr::include_graphics(here::here("mountain.jpg"))
+knitr::include_graphics(here::here("mountain.png"))
 ```
 
 

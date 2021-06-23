@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/2021-06-22-blogtest/",
-    "title": "Test of a blog-type of post",
+    "title": "Test of a blog type of post",
     "description": "A short description of the post.",
     "author": [
       {
@@ -9,11 +9,11 @@
         "url": {}
       }
     ],
-    "date": "2021-06-22",
+    "date": "2021-06-23",
     "categories": [],
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-06-22T23:46:02+02:00",
+    "last_modified": "2021-06-23T10:07:44+02:00",
     "input_file": {}
   },
   {
