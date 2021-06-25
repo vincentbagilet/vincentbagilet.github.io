@@ -7,18 +7,7 @@
     <description>Vincent Bagilet
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate>
-    <item>
-      <title>Test of a blog type of post</title>
-      <dc:creator>Vincent Bagilet</dc:creator>
-      <link>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest</link>
-      <description>A short description of the post.</description>
-      <category>Test</category>
-      <category>R</category>
-      <guid>https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest</guid>
-      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://vincentbagilet.github.io/vincentbagilet_website/posts/2021-06-22-blogtest/mountain.png" medium="image" type="image/png" width="1280" height="853"/>
-    </item>
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>mediocrethemes</title>
       <dc:creator>Vincent Bagilet</dc:creator>

@@ -126,7 +126,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["mediocrethemes_files/anchor-4.2.2/anchor.min.js","mediocrethemes_files/bowser-1.9.3/bowser.min.js","mediocrethemes_files/distill-2.2.21/template.v2.js","mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png","mediocrethemes_files/figure-html5/unnamed-chunk-1-2.png","mediocrethemes_files/figure-html5/unnamed-chunk-2-1.png","mediocrethemes_files/figure-html5/unnamed-chunk-2-2.png","mediocrethemes_files/jquery-1.11.3/jquery.min.js","mediocrethemes_files/popper-2.6.0/popper.min.js","mediocrethemes_files/tippy-6.2.7/tippy-bundle.umd.min.js","mediocrethemes_files/tippy-6.2.7/tippy-light-border.css","mediocrethemes_files/tippy-6.2.7/tippy.css","mediocrethemes_files/tippy-6.2.7/tippy.umd.min.js","mediocrethemes_files/webcomponents-2.0.0/webcomponents.js","mediocrethemes_palette"]}
+  {"type":"character","attributes":{},"value":["example_xaringan.gif","mediocrethemes_files/anchor-4.2.2/anchor.min.js","mediocrethemes_files/bowser-1.9.3/bowser.min.js","mediocrethemes_files/distill-2.2.21/template.v2.js","mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png","mediocrethemes_files/figure-html5/unnamed-chunk-1-2.png","mediocrethemes_files/figure-html5/unnamed-chunk-2-1.png","mediocrethemes_files/figure-html5/unnamed-chunk-2-2.png","mediocrethemes_files/figure-html5/unnamed-chunk-3-1.png","mediocrethemes_files/figure-html5/unnamed-chunk-3-2.png","mediocrethemes_files/figure-html5/unnamed-chunk-3-3.png","mediocrethemes_files/figure-html5/unnamed-chunk-4-1.png","mediocrethemes_files/figure-html5/unnamed-chunk-5-1.png","mediocrethemes_files/jquery-1.11.3/jquery.min.js","mediocrethemes_files/popper-2.6.0/popper.min.js","mediocrethemes_files/tippy-6.2.7/tippy-bundle.umd.min.js","mediocrethemes_files/tippy-6.2.7/tippy-light-border.css","mediocrethemes_files/tippy-6.2.7/tippy.css","mediocrethemes_files/tippy-6.2.7/tippy.umd.min.js","mediocrethemes_files/webcomponents-2.0.0/webcomponents.js","mediocrethemes_palette"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2183,6 +2183,26 @@ d-appendix d-footnote-list a.footnote-backlink {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="mediocrethemes_files/figure-html5/unnamed-chunk-2-1.png" width="85%" style="display: block; margin: auto;" /><img src="mediocrethemes_files/figure-html5/unnamed-chunk-2-2.png" width="85%" style="display: block; margin: auto;" /></p>
 </div>
+<!-- Several color palettes, inspired from [coolors](https://coolors.co/) are available, for instance: -->
+<!-- ```{r} -->
+<!-- qplot(x = 1:15, y = 1, fill = factor(1:15), geom = "tile") + -->
+<!--   theme_void() + -->
+<!--   scale_mediocre_d(pal = "coty") + -->
+<!--   theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) + -->
+<!--   theme(legend.position="none") -->
+<!-- ``` -->
+<!-- ```{r} -->
+<!-- qplot(x = 1:15, y = 1, fill = factor(1:15), geom = "tile") + -->
+<!--   theme_void() + -->
+<!--   scale_mediocre_d(pal = "hotcold") + -->
+<!--   theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) + -->
+<!--   theme(legend.position="none") -->
+<!-- ``` -->
+<p>I also created a <a href="https://github.com/yihui/xaringan"><code>xaringan</code></a> slides template in a style consistent with <code>mediocrethemes</code>:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="example_xaringan.gif" width="85%" style="display: block; margin: auto;" /></p>
+</div>
+<p>This is a simple an application of the <a href="https://pkg.garrickadenbuie.com/xaringanthemer/"><code>xaringanthemer</code></a> package and can be very easily set up with the function <code>mediocrethemes::xaringan_mediocre()</code></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

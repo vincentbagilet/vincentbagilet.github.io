@@ -36,14 +36,11 @@ I also tried to build my code so that it is reproducible. Users should be able t
 The base color palette is:
 
 ```{r}
-library(ggplot2)
 library(mediocrethemes)
 
 set_mediocre_all()
 
-pal <- unlist(strsplit(colors_table$vector[1], split = ", ")) 
-
-qplot(x = 1:15, y = 1, fill = factor(1:15), geom="tile") +
+qplot(x = 1:15, y = 1, fill = factor(1:15), geom = "tile") +
   theme_void() +
   theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) +
   theme(legend.position="none") 
@@ -62,9 +59,31 @@ ggplot(data = ggplot2::mpg, aes(x = cty, y = displ)) +
     labs(title = "A very nice title", subtitle = "A disappointing subtitle")
 ```
 
+<!-- Several color palettes, inspired from [coolors](https://coolors.co/) are available, for instance: -->
 
+<!-- ```{r} -->
+<!-- qplot(x = 1:15, y = 1, fill = factor(1:15), geom = "tile") + -->
+<!--   theme_void() + -->
+<!--   scale_mediocre_d(pal = "coty") + -->
+<!--   theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) + -->
+<!--   theme(legend.position="none") -->
+<!-- ``` -->
 
+<!-- ```{r} -->
+<!-- qplot(x = 1:15, y = 1, fill = factor(1:15), geom = "tile") + -->
+<!--   theme_void() + -->
+<!--   scale_mediocre_d(pal = "hotcold") + -->
+<!--   theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) + -->
+<!--   theme(legend.position="none") -->
+<!-- ``` -->
 
+I also created a [`xaringan`](https://github.com/yihui/xaringan) slide template in a style consistent with `mediocrethemes`:
+
+```{r}
+knitr::include_graphics("example_xaringan.gif")
+```
+
+This is a simple an application of the [`xaringanthemer`](https://pkg.garrickadenbuie.com/xaringanthemer/) package and can be very easily set up with the function `mediocrethemes::xaringan_mediocre()`, as explained in [this vignette](https://vincentbagilet.github.io/mediocrethemes/articles/xaringan.html).
 
 
 

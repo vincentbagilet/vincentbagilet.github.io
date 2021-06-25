@@ -16,7 +16,7 @@ Hi and welcome to my personal website!
 
 I am a third year PhD student in Sustainable Development at Columbia University. 
 
-In my research, I leverage empirical data to study how social norms and peer behavior affect environmental attitudes of individuals. I am also particularly enthusiastic about empirical analyses of environment related issues in general and R programming. 
+In my research, I leverage observational data to study how social norms and peer behavior affect environmental attitudes of individuals. In general, I am particularly enthusiastic about empirical analyses of any environment related issue. 
 
 Prior to joining Columbia, I earned masters in Quantitative Economics from the Paris School of Economics, in Environmental Economics from University Paris Saclay/AgroParisTech and in Engineering with a specialization in energy from Centrale Lyon.
 
