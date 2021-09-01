@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Work in progress
 
-- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version of the working paper](papers/inference_air_pollution.pdf)
+- Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. [Last version of the working paper](https://vincentbagilet.github.io/inference_pollution/paper.pdf)
 <!-- - A trade-off between omitted variable bias and type M error, with Léo Zabrocki. -->
 
 # Published papers

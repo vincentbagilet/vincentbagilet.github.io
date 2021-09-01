@@ -1860,27 +1860,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
+  /* @import url('https://fonts.googleapis.com/css2?family=Cardo'); */
   @import url('https://fonts.googleapis.com/css2?family=Lora');
+  @import url('https://fonts.googleapis.com/css2?family=Lato');
   
   
   html {
     /*-- Main font sizes --*/
     --title-size:      50px;
-    --body-size:       1.06rem;
+    --body-size:       1rem;
     --code-size:       14px;
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     rgba(0, 49, 60, 0.8);
-    --header-color:    rgba(0, 49, 60, 0.8);
+    --title-color:     rgba(0, 49, 60, 1);
+    --header-color:    rgba(0, 49, 60, 1);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     --hover-color:     rgba(0, 49, 60, 0.4);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    "Lora", serif;
+    --heading-font:    "Lato", serif;
     --body-font:       "Lora", serif;
-    --navbar-font:     "Lora", serif;  /* websites + blogs only */
+    --navbar-font:     "Lato", serif;  /* websites + blogs only */
   }
   
   /*-- ARTICLE METADATA --*/
@@ -1911,10 +1913,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header {
     --font-family:      'Lora', serif;
     --title-size:       21px;
-    --text-color:       rgba(0, 49, 60, 0.8);
+    --text-color:       rgba(0, 49, 60, 1);
     --text-size:        18px;
     --hover-color:      rgba(0, 49, 60, 0.4);
     --bkgd-color:       rgba(255, 255, 255, 0.8);
+    font-variant: small-caps;
   }
   
   .distill-site-footer {
@@ -1927,9 +1930,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
   
-  /* Postcard headers */
+  /* Postcard headers*/
   h1, h2, h3 {
-    color: rgba(0, 49, 60, 0.8);
+    color: rgba(0, 49, 60, 1);
+    font-variant: small-caps;
+  }
+  
+  p {
+    color: rgba(0, 0, 0, 0.8);
   }
   
   /*body {
@@ -2143,7 +2151,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <h1 id="work-in-progress">Work in progress</h1>
 <ul>
-<li>Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. <a href="papers/inference_air_pollution.pdf">Last version of the working paper</a> <!-- - A trade-off between omitted variable bias and type M error, with Léo Zabrocki. --></li>
+<li>Inference design in studies on short term health effect of air pollution, with Léo Zabrocki. <a href="https://vincentbagilet.github.io/inference_pollution/paper.pdf">Last version of the working paper</a> <!-- - A trade-off between omitted variable bias and type M error, with Léo Zabrocki. --></li>
 </ul>
 <h1 id="published-papers">Published papers</h1>
 <ul>
