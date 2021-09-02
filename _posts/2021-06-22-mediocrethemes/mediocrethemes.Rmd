@@ -8,7 +8,7 @@ categories:
   - ggplot
 author:
   - name: Vincent Bagilet
-    url: {https://vincentbagilet.github.io/vincentbagilet_website}
+    url: {https://vincentbagilet.github.io}
 date: 2021-06-22
 citation: false
 output:

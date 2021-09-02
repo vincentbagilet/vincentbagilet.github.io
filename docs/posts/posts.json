@@ -7,7 +7,7 @@
       {
         "name": "Vincent Bagilet",
         "url": {
-          "https://vincentbagilet.github.io/vincentbagilet_website": {}
+          "https://vincentbagilet.github.io": {}
         }
       }
     ],
@@ -19,7 +19,7 @@
     ],
     "contents": "\nmedoiocrethemes is a small R package providing ready to use ggplot themes that are, in my opinion, not strikingly nice but, hopefully, not strikingly ugly either (hence the name of the package). More info and vignettes to get familiar with the package can be found on the package website.\nTo me, the function set_mediocre_all() is the most useful feature of my package. When called at the beginning of the code, all subsequent graphs will be created using the new theme, without any additional line of code. This function enables users to easily depart from the nice but too often seen base ggplot theme and color scheme.\nI tried my best to make my code reproducible. Users should be able to easily adapt my code to create their own theme and color scheme. The code for this package can be find on the GitHub page of the package.\nThe base color palette is:\n\n\n\nHere are a couple of example plots build using the theme and main color scale. A lot more graphs and color scales can be seen on the package website.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI also created a xaringan slide template in a style consistent with mediocrethemes:\n\n\n\nThis is a simple an application of the xaringanthemer package and can be very easily set up with the function mediocrethemes::xaringan_mediocre(), as explained in this vignette.\n\n\n\n",
     "preview": "posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-09-01T12:09:02+02:00",
+    "last_modified": "2021-09-02T13:14:27+02:00",
     "input_file": {},
     "preview_width": 3900,
     "preview_height": 2400

@@ -4,7 +4,7 @@ theme: VB_website.css
 description: |
   Vincent Bagilet
 output_dir: "docs"
-base_url: https://vincentbagilet.github.io/vincentbagilet_website
+base_url: https://vincentbagilet.github.io/
 navbar:
   # logo: "one_up.png"
   right:
