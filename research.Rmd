@@ -11,5 +11,5 @@ I am currently working on a few projects on the determinants of environmental at
 # Work in progress
 
 - Inference Design In Studies on Acute Health Effects of Air Pollution, with Léo Zabrocki [[Last version of the working paper](https://vincentbagilet.github.io/inference_pollution/paper.pdf) and [project website](https://vincentbagilet.github.io/inference_pollution/)].
-<!-- - A trade-off between omitted variable bias and type M error, with Léo Zabrocki. -->
+- Overcoming the omitted variable bias at the cost of type M error, with Léo Zabrocki.
 
