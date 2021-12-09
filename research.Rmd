@@ -3,13 +3,57 @@ title: "Research"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+opts_chunk$set(fig.path = "images/",
+               cache.path = "cache/",
+               cache = FALSE,
+               echo = FALSE, #set to false to hide code
+               message = FALSE,
+               warning = FALSE,
+               out.width = "100%",
+               dpi = 200,
+               fig.align = "center")  
 ```
 
 I am currently working on a few projects on the determinants of environmental attitudes of individuals. They are still at an embryonic stage but I will share my progresses here as soon as my projects are more developed and polished. I am also currently working on a couple of projects linked to causal inference methods.
 
 # Work in progress
 
-- Inference Design In Studies on Acute Health Effects of Air Pollution, with Léo Zabrocki [[Last version of the working paper](https://vincentbagilet.github.io/inference_pollution/paper.pdf) and [project website](https://vincentbagilet.github.io/inference_pollution/)].
-- Overcoming the omitted variable bias at the cost of type M error, with Léo Zabrocki.
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+::: {.column width="57%"}
+### Inference Design In Studies on Acute Health Effects of Air Pollution
+
+Paper with Léo Zabrocki.
+
+The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf).
+
+The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/).
+:::
+
+::: {.column width="40%"}
+```{r image_inference_pollution, echo=FALSE}
+knitr::include_graphics(here::here("images/refinery.jpg"))
+```
+:::
+::::
+
+<br />
+
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+::: {.column width="40%"}
+```{r image_causal_inference, echo=FALSE}
+knitr::include_graphics(here::here("images/hot_air_balloons.jpg"))
+```
+:::
+
+::: {.column width="57%"}
+### Unbiased but Inflated Causal Effects
+
+Paper with Léo Zabrocki.
+
+<!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
+
+<!-- The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/). -->
+:::
+::::
 

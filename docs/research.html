@@ -56,7 +56,7 @@ code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Vincent Bagilet: Research</title>
@@ -452,7 +453,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   </style>
   
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1600,7 +1601,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2169,10 +2173,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <p>I am currently working on a few projects on the determinants of environmental attitudes of individuals. They are still at an embryonic stage but I will share my progresses here as soon as my projects are more developed and polished. I am also currently working on a couple of projects linked to causal inference methods.</p>
 <h1 id="work-in-progress">Work in progress</h1>
-<ul>
-<li>Inference Design In Studies on Acute Health Effects of Air Pollution, with Léo Zabrocki [<a href="https://vincentbagilet.github.io/inference_pollution/paper.pdf">Last version of the working paper</a> and <a href="https://vincentbagilet.github.io/inference_pollution/">project website</a>].</li>
-<li>Overcoming the omitted variable bias at the cost of type M error, with Léo Zabrocki.</li>
-</ul>
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<div class="column" style="width:57%;">
+<h3 id="inference-design-in-studies-on-acute-health-effects-of-air-pollution">Inference Design In Studies on Acute Health Effects of Air Pollution</h3>
+<p>Paper with Léo Zabrocki.</p>
+<p>The last version of the working paper can be downloaded <a href="https://vincentbagilet.github.io/inference_pollution/paper.pdf">here</a>.</p>
+<p>The project website can be accessed <a href="https://vincentbagilet.github.io/inference_pollution/">here</a>.</p>
+</div>
+<div class="column" style="width:40%;">
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/refinery.jpg" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+</div>
+<p><br /></p>
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<div class="column" style="width:40%;">
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/hot_air_balloons.jpg" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div class="column" style="width:57%;">
+<h3 id="unbiased-but-inflated-causal-effects">Unbiased but Inflated Causal Effects</h3>
+<p>Paper with Léo Zabrocki.</p>
+<!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
+<!-- The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/). -->
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
