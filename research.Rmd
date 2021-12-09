@@ -21,11 +21,11 @@ I am currently working on a few projects on the determinants of environmental at
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="57%"}
-### Inference Design In Studies on Acute Health Effects of Air Pollution
+### Why Acute Health Effects of Air Pollution Could be Inflated
 
 Paper with Léo Zabrocki.
 
-The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf).
+The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/wp_bagilet_zabrocki.pdf).
 
 The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/).
 :::
