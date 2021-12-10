@@ -42,7 +42,7 @@ knitr::include_graphics(here::here("images/refinery.jpg"))
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
 ```{r image_causal_inference, echo=FALSE}
-knitr::include_graphics(here::here("images/hot_air_balloons.jpg"))
+knitr::include_graphics(here::here("images/blue_balloon.jpg"))
 ```
 :::
 
