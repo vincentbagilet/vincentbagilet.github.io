@@ -32,7 +32,7 @@ The project website can be accessed [here](https://vincentbagilet.github.io/infe
 
 ::: {.column width="40%"}
 ```{r image_inference_pollution, echo=FALSE}
-knitr::include_graphics(here::here("images/refinery.jpg"))
+knitr::include_graphics(here::here("images/illustration_car.png"))
 ```
 :::
 ::::
@@ -42,14 +42,18 @@ knitr::include_graphics(here::here("images/refinery.jpg"))
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
 ```{r image_causal_inference, echo=FALSE}
-knitr::include_graphics(here::here("images/blue_balloon.jpg"))
+knitr::include_graphics(here::here("images/balloon.jpg"))
 ```
 :::
 
 ::: {.column width="57%"}
-### Unbiased but Inflated Causal Effects
+### Unconfounded but Inflated Causal Estimates
 
 Paper with Léo Zabrocki.
+
+The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_inflation/causal_inflation_paper.pdf).
+
+The project website can be accessed [here](https://vincentbagilet.github.io/causal_inflation/).
 
 <!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
 
