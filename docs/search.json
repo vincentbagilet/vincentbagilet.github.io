@@ -5,14 +5,22 @@
       "title": "Vincent Bagilet",
       "author": [],
       "contents": "\n\n          \n      \n      Vincent Bagilet\n      \n      \n      Home\n      Research\n      Projects\n      CV\n      ☰\n      \n      \n      \n        \n          \n            \n              \n            \n              Vincent Bagilet\n            \n            \n              \n                \n                    \n                      \n                         Email\n                      \n                    \n                  \n                                    \n                    \n                      \n                         GitHub\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            Hi and welcome to my personal website!\n            I am a fourth year PhD student in Sustainable Development at Columbia University.\n            My main research interests revolve around the determinants of environmental attitudes of individuals. I use observational data to study to what extent social norms, public policies and peer effects can affect the environmental consumption behavior of individuals.\n            Overall, I am particularly enthusiastic about the use of unconventional data to analyze environment related issues. I also love working on projects that can help me develop my knowledge in causal inference and data visualization.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Vincent Bagilet\n            \n            \n              \n                \n                                    \n                    \n                       Email\n                    \n                  \n                                    \n                    \n                       GitHub\n                    \n                  \n                                  \n              \n            \n            \n              Hi and welcome to my personal website!\n              I am a fourth year PhD student in Sustainable Development at Columbia University.\n              My main research interests revolve around the determinants of environmental attitudes of individuals. I use observational data to study to what extent social norms, public policies and peer effects can affect the environmental consumption behavior of individuals.\n              Overall, I am particularly enthusiastic about the use of unconventional data to analyze environment related issues. I also love working on projects that can help me develop my knowledge in causal inference and data visualization.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2022-04-01T16:22:49-04:00"
+      "last_modified": "2022-04-01T18:44:26-04:00"
+    },
+    {
+      "path": "projects.html",
+      "title": "Projects",
+      "description": "A list of short and simple descriptions of some of my projects.\n",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-04-01T18:44:28-04:00"
     },
     {
       "path": "research.html",
       "title": "Research",
       "author": [],
       "contents": "\nI am currently working on a couple of papers linked to causal inference methods and a few projects on the determinants of environmental attitudes of individuals. Most of the later projects are still at an embryonic stage. I will share my progresses here as soon as my projects are more developed and polished.\nWork in progress\n\n\nWhy Acute Health Effects of Air Pollution Could be Inflated\nPaper with Léo Zabrocki.\nThe last version of the working paper can be downloaded here.\nThe project website can be accessed here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnconfounded but Inflated Causal Estimates\nPaper with Léo Zabrocki.\nThe last version of the working paper can be downloaded here.\nThe project website can be accessed here.\n\n\n\n\n\n\n\n",
-      "last_modified": "2022-04-01T16:25:51-04:00"
+      "last_modified": "2022-04-01T18:44:28-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
