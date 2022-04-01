@@ -15,7 +15,7 @@ opts_chunk$set(fig.path = "images/",
                fig.align = "center")  
 ```
 
-I am currently working on a few projects on the determinants of environmental attitudes of individuals. They are still at an embryonic stage but I will share my progresses here as soon as my projects are more developed and polished. I am also currently working on a couple of projects linked to causal inference methods.
+I am currently working on a couple of papers linked to causal inference methods and a few projects on the determinants of environmental attitudes of individuals. Most of the later projects are still at an embryonic stage. I will share my progresses here as soon as my projects are more developed and polished. 
 
 # Work in progress
 
