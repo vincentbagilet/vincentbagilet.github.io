@@ -15,29 +15,10 @@ opts_chunk$set(fig.path = "images/",
                fig.align = "center")  
 ```
 
-I am currently working on a couple of papers linked to causal inference methods and a few projects on the determinants of environmental attitudes of individuals. Most of the later projects are still at an embryonic stage. I will share my progresses here as soon as these projects are more developed and polished. 
+I am currently working on a couple of papers linked to causal inference methods and a few projects on the determinants of environmental attitudes of individuals. Most of the latter projects are still at an embryonic stage. I will share my progresses here as soon as these projects are more developed and polished. 
 
 # Work in progress
 
-:::: {style="display: flex; align-items: center; justify-content: space-between;"}
-::: {.column width="57%"}
-### Why Acute Health Effects of Air Pollution Could be Inflated
-
-Paper with Léo Zabrocki.
-
-The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/wp_bagilet_zabrocki.pdf).
-
-The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/).
-:::
-
-::: {.column width="40%"}
-```{r image_inference_pollution, echo=FALSE}
-knitr::include_graphics(here::here("images/illustration_car.png"))
-```
-:::
-::::
-
-<br />
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
@@ -58,6 +39,26 @@ The project website can be accessed [here](https://vincentbagilet.github.io/caus
 <!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
 
 <!-- The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/). -->
+:::
+::::
+
+<br />
+
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+::: {.column width="57%"}
+### Why Acute Health Effects of Air Pollution Could be Inflated
+
+Paper with Léo Zabrocki.
+
+The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/wp_bagilet_zabrocki.pdf).
+
+The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/).
+:::
+
+::: {.column width="40%"}
+```{r image_inference_pollution, echo=FALSE}
+knitr::include_graphics(here::here("images/illustration_car.png"))
+```
 :::
 ::::
 

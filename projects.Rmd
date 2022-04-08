@@ -1,6 +1,6 @@
 ---
-title: "Projects"  # any name you want here
+title: "Coding projects"  # any name you want here
 description: |
-  A list of short and simple descriptions of some of my projects.
+  A list of short and simple descriptions of some of my R-coding related projects.
 listing: posts # do this exactly
 ---
