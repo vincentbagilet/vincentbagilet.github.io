@@ -12,13 +12,13 @@ output:
   postcards::trestles
 ---
  
-Hi and welcome to my personal website!
+Hi, 
 
 I am a fourth year PhD student in [Sustainable Development](https://www.sipa.columbia.edu/academics/programs/phd-sustainable-development) at Columbia University. 
 
-My main research interests revolve around the determinants of **environmental attitudes** of individuals. I use observational data to study to what extent social norms, public policies and peer effects can affect the environmental consumption behavior of individuals. 
+My main research interests revolve around the determinants of **environmental attitudes** of individuals. I use observational data to study to what extent social norms, culture, public policies and peer effects can affect the environmental consumption behavior of individuals. 
 
-Overall, I am particularly enthusiastic about the use of **unconventional data** to analyze environment related issues. I also love working on projects that can help me develop my knowledge in **causal inference** and **data visualization**.
+Overall, I am particularly enthusiastic about the use of **unconventional data** to analyze environment related issues. I also love working on projects that can help me develop my knowledge on **causal inference** and **data visualization**.
 
 <!-- Prior to joining Columbia, I earned masters in [Quantitative Economics from the Paris School of Economics](https://www.parisschoolofeconomics.eu/en/teaching/masters-program/ppd-public-policy-and-development/), in [Environmental Economics from University Paris Saclay/AgroParisTech](https://www.universite-paris-saclay.fr/en/education/master/environmental-energy-and-transport-economics#presentation) and in Engineering with a specialization in Energy from [Ecole Centrale Lyon](https://www.ec-lyon.fr/en). -->
 
