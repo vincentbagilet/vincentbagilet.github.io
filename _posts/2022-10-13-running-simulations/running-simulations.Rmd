@@ -1,7 +1,7 @@
 ---
 title: "Running simulations"
 description: |
-  In this short tutorial I present a simple workflow to run econometrics simulations in R.
+  In this short tutorial I present a simple workflow I use to run econometrics simulations in R.
 preview: spiral.jpg
 categories:
   - R
@@ -31,7 +31,7 @@ xaringanExtra::use_clipboard()
 set.seed(2)
 ```
 
-This tutorial describes the workflow I use to run fake-data econometrics simulations. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
+This tutorial describes the workflow I use to run fake-data econometrics simulations in R. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
 
 I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On [the website of one of our projects](https://vincentbagilet.github.io/causal_inflation/), we describe how we ran more advanced fake data simulations for various causal inference methods (IV, event-study, RDD, matching). On [the website of another project](https://vincentbagilet.github.io/inference_pollution/), we describe how we ran simulations based on real data, also for various causal inference methods.
 
@@ -225,7 +225,7 @@ result_sim <- future_pmap_dfr(param, compute_sim,
 
 I then briefly analyse the output of this simulation. In this example, we are interested in studying how the distribution of the estimates varies with the value of $\sigma_x$. I therefore run a longer simulation with 500 iterations and 4 values for $\sigma_x$. 
 
-```{r long_sim, echo=FALSE, eval=FALSE}
+```{r long_sim, echo=FALSE}
 n_iter <- 500
 vect_sigma_x <- seq(0.2, 0.8, 0.2)
 
@@ -241,7 +241,7 @@ result_sim_long <- future_pmap_dfr(param_long, compute_sim,
 
 I then make the graph of interest: 
 
-```{r graph, eval=FALSE}
+```{r graph}
 result_sim_long %>% 
   mutate(sigma_x = as.factor(sigma_x)) %>% 
   ggplot() +

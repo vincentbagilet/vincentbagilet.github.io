@@ -12,7 +12,7 @@
       <title>Running simulations</title>
       <dc:creator>Vincent Bagilet</dc:creator>
       <link>https://vincentbagilet.github.io/posts/2022-10-13-running-simulations</link>
-      <description>In this short tutorial I present a simple workflow to run econometrics simulations in R.</description>
+      <description>In this short tutorial I present a simple workflow I use to run econometrics simulations in R.</description>
       <category>R</category>
       <category>Simulations</category>
       <category>Tutorial</category>
