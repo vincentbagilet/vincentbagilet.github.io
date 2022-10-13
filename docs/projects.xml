@@ -7,7 +7,19 @@
     <description>Vincent Bagilet
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Running simulations</title>
+      <dc:creator>Vincent Bagilet</dc:creator>
+      <link>https://vincentbagilet.github.io/posts/2022-10-13-running-simulations</link>
+      <description>In this short tutorial I present a simple workflow to run econometrics simulations in R.</description>
+      <category>R</category>
+      <category>Simulations</category>
+      <category>Tutorial</category>
+      <guid>https://vincentbagilet.github.io/posts/2022-10-13-running-simulations</guid>
+      <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://vincentbagilet.github.io/posts/2022-10-13-running-simulations/spiral.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>mediocrethemes</title>
       <dc:creator>Vincent Bagilet</dc:creator>

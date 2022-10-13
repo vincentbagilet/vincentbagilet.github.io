@@ -1,0 +1,332 @@
+---
+title: "Running simulations"
+description: |
+  In this short tutorial I present a simple workflow to run econometrics simulations in R.
+preview: spiral.jpg
+categories:
+  - R
+  - Simulations
+  - Tutorial
+author:
+  - name: Vincent Bagilet
+    url: {https://vincentbagilet.github.io}
+date: 2022-10-13
+citation: false
+output:
+  distill::distill_article:
+    self_contained: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(message = FALSE,
+               warning = FALSE,
+               out.width = "85%",
+               dpi = 300,
+               fig.align = "center")
+
+xaringanExtra::use_clipboard()
+set.seed(2)
+```
+
+This tutorial describes the workflow I use to run fake-data econometrics simulations. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
+
+I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On [the website of one of our projects](https://vincentbagilet.github.io/causal_inflation/), we describe how we ran more advanced fake data simulations for various causal inference methods (IV, event-study, RDD, matching). On [the website of another project](https://vincentbagilet.github.io/inference_pollution/), we describe how we ran simulations based on real data, also for various causal inference methods.
+
+# Simulation workflow
+
+- **Define a set of baseline parameters** and store them in a data frame,
+- **Generate data** for a given set of parameters,
+- **Run the estimation** and extract the outcomes of interest,
+- **Compute one simulation** by combing the previous steps,
+- **Replicate the process** for a number of iterations and a set of parameters.
+
+We apply this workflow building on [purrr](https://purrr.tidyverse.org/) and more generally [tidyverse](https://www.tidyverse.org/) principles. 
+
+<!-- The following flowchart summarizes the workflow: -->
+
+<!-- ```{r flowchart, echo=FALSE} -->
+<!-- knitr::include_graphics("flowchart_simulations.png") -->
+<!-- ``` -->
+
+# Detailed explanation
+
+To illustrate this workflow, consider an example from an extremely simple setting. In this example, the goal is to study how the distribution of an estimator varies with the variance of the associated variable. Let's consider the following model: 
+
+$$ y_i = \alpha + \beta x_i + u_i $$
+for individual $i \in \{1, .., N\}$ where $u_i \sim \mathcal{N}(0, \sigma_u^2)$ and $x_i \sim \mathcal{N}(\mu_x, \sigma_x^2)$. 
+
+### Packages
+
+First load the packages necessary to run the simulation. Here I also load an additional and non necessary package that I useto produce my graphs.
+
+```{r packages}
+#necessary packages
+library(tidyverse)
+library(broom)
+
+#additional packages
+library(mediocrethemes) #my ggplot theme package
+mediocrethemes::set_mediocre_all() #to produce all graphs with my theme
+```
+
+### Define a set of baseline parameters
+
+Store the values of the baseline parameters in a one-row tibble, `baseline_param`:
+
+```{r baseline_param}
+baseline_param <- tibble(
+  N = 1000,
+  mu_x = 1.2, 
+  sigma_x = 0.9,
+  sigma_u = 0.8,
+  alpha = 0.5,
+  beta = 0.9
+)
+```
+
+<!-- `baseline_param` is thus: -->
+
+<!-- ```{r baseline_param_display, echo=FALSE} -->
+<!-- baseline_param %>% kable() -->
+<!-- ``` -->
+
+### Generate data
+
+I then write a function that takes these parameters as inputs and returns a randomly generated data set:
+
+```{r generate_data}
+generate_data <- function(N,
+                          mu_x,
+                          sigma_x,
+                          sigma_u, 
+                          alpha,
+                          beta) {
+  
+  data <- tibble(id = 1:N) %>%
+    mutate(
+      x = rnorm(N, mu_x, sigma_x),
+      u = rnorm(N, 0, sigma_u),
+      y = alpha + beta*x + u
+    )
+}
+```
+
+One can pass the parameters to the function using the `pmap_dfr` function for instance:
+
+```{r data_generated}
+example_data <- purrr::pmap_dfr(baseline_param, generate_data)
+```
+
+<!-- The resulting generated data set is^[This table is generated with the function `DT::datatable`]: -->
+
+<!-- ```{r echo=FALSE} -->
+<!-- DT::datatable(example_data) -->
+<!-- ``` -->
+
+### Run the estimation
+
+I then write a function that takes the generated data as input, runs the estimation and returns the parameters of interest in a data frame. Here I am interested in estimates of $\beta$ and therefore only consider the results for the $x$ term.
+
+```{r run_estim}
+run_estim <- function(data) {
+  reg <- lm(data = data, y ~ x) %>%
+    broom::tidy() %>%
+    filter(term == "x") 
+}
+```
+
+This function, applied to `example_data`, returns the following data set:
+
+```{r ex_estim, echo=FALSE}
+run_estim(example_data) %>% kable()
+```
+
+### Compute simulation
+
+I then combine `generate_data` and `run_estim` into one function to compute one iteration of the simulation. I also add a line of code to store the parameters used in this simulation. 
+
+```{r compute_sim}
+compute_sim <- function(...) {
+  generate_data(...) %>% 
+    run_estim() %>% 
+    cbind(as_tibble(list(...))) #add parameters used for generation
+}
+```
+
+### Replicate the process
+
+To run several iterations of the simulation, I build a data frame of parameters such that each row contains the values of the parameters for one single iteration of the simulation. 
+
+If one wants to run `n_iter` iterations of the simulation for the baseline parameter values, they only have to replicate the one-row tibble `baseline_param` using `crossing`.
+
+```{r define_rep_param}
+n_iter <- 5
+
+param <- baseline_param %>% 
+  crossing(rep_id = 1:n_iter) %>% 
+  select(-rep_id) 
+```
+
+It produces a data frame with `n_iter` (here 5) identical rows:
+
+```{r display_rep_param, echo=FALSE}
+param %>% kable()
+```
+
+Then simply pass the resulting set of parameter values to the function `compute_sim` using `pmap_dfr`:
+
+```{r}
+result_sim <- pmap_dfr(param, compute_sim)
+```
+
+Using this method, onz can also easily run a series of simulations for several parameter values. Here, I vary `sigma_x` and run `n_iter` iterations of the simulation for each value of the varying parameter `sigma_x`.
+
+```{r replicate_sim}
+n_iter <- 5
+
+vect_sigma_x <- c(0.2, 0.8)
+
+param_sigma_x <- baseline_param %>% 
+  crossing(rep_id = 1:n_iter)  %>% 
+  select(-sigma_x) %>% 
+  crossing(sigma_x = vect_sigma_x) %>% 
+  select(-rep_id) 
+```
+
+It produces a data frame with `n_iter` times the number of values for the varying parameter rows (here 5 times 2 simulations):
+
+```{r param_sigma_x_displ, echo=FALSE}
+param_sigma_x %>% kable()
+```
+
+I can then pass this data frame to `compute_sim` to obtain our simulation results.
+
+```{r result_sim_sigma_x, eval=FALSE}
+result_sim_sigma_x <- pmap_dfr(param_sigma_x, compute_sim)
+```
+
+### Parallel computing
+
+The simulation process can easily be parallelized using [furrr](https://furrr.futureverse.org/index.html). To do so, one should use `future_pmap_dfr` instead of `pmap_dfr`. To do that, define the type of session to use and potentially set the seed option to `TRUE`.
+
+```{r future}
+library(furrr)
+
+future::plan(multisession, workers = availableCores() - 1)
+
+result_sim <- future_pmap_dfr(param, compute_sim,
+        .options = furrr_options(seed = TRUE))
+```
+
+### Analysis of the results
+
+I then briefly analyse the output of this simulation. In this example, we are interested in studying how the distribution of the estimates varies with the value of $\sigma_x$. I therefore run a longer simulation with 500 iterations and 4 values for $\sigma_x$. 
+
+```{r long_sim, echo=FALSE, eval=FALSE}
+n_iter <- 500
+vect_sigma_x <- seq(0.2, 0.8, 0.2)
+
+param_long <- baseline_param %>% 
+  crossing(rep_id = 1:n_iter)  %>% 
+  select(-sigma_x) %>% 
+  crossing(sigma_x = vect_sigma_x) %>% 
+  select(-rep_id) 
+
+result_sim_long <- future_pmap_dfr(param_long, compute_sim,
+        .options = furrr_options(seed = TRUE))
+```
+
+I then make the graph of interest: 
+
+```{r graph, eval=FALSE}
+result_sim_long %>% 
+  mutate(sigma_x = as.factor(sigma_x)) %>% 
+  ggplot() +
+  geom_density(aes(x = estimate, color = sigma_x), alpha = 0) +
+  labs(
+    title = "Distribution of the estimates of beta",
+    subtitle = "Comparison for different values of the standard deviation of x",
+    color = "sd(x)",
+    fill = "sd(x)",
+    x = "Value of the estimate of beta",
+    y = "Density"
+  )
+```
+
+Each distribution is built based on 500 points (estimates). This graph illustrates a well know result: the distribution of the estimates widens when $\sigma_x$ decreases.
+
+# A simple template
+
+The following code summarizes the previous chunks. One can thus easily copy/paste the entire simulation to adapt it to a specific context.
+
+```{r template, eval=FALSE}
+#packages and set cores
+library(tidyverse)
+library(broom)
+library(furrr)
+
+future::plan(multisession, workers = availableCores() - 1)
+
+#set baseline parameters
+baseline_param <- tibble(
+  N = 1000,
+  mu_x = 1.2, 
+  sigma_x = 0.9,
+  sigma_u = 0.8,
+  alpha = 0.5,
+  beta = 0.9
+)
+
+#function to generate data
+generate_data <- function(N,
+                          mu_x,
+                          sigma_x,
+                          sigma_u, 
+                          alpha,
+                          beta) {
+  
+  data <- tibble(id = 1:N) %>%
+    mutate(
+      x = rnorm(N, mu_x, sigma_x),
+      u = rnorm(N, 0, sigma_u),
+      y = alpha + beta*x + u
+    )
+}
+
+#function to run the estimation
+run_estim <- function(data) {
+  reg <- lm(data = data, y ~ x) %>%
+    broom::tidy() %>%
+    filter(term == "x") 
+}
+
+#function to compute a simulation
+compute_sim <- function(...) {
+  generate_data(...) %>% 
+    run_estim() %>% 
+    cbind(as_tibble(list(...))) #add parameters used for generation
+}
+
+#replicate the process
+#set the number of iterations and parameters to vary
+n_iter <- 1000
+vect_sigma_x <- seq(0.2, 2, 0.2)
+#define the complete set of parameters
+param <- baseline_param %>% 
+  crossing(rep_id = 1:n_iter)  %>% 
+  select(-sigma_x) %>% 
+  crossing(sigma_x = vect_sigma_x) %>% 
+  select(-rep_id) 
+
+result_sim <- future_pmap_dfr(param, compute_sim,
+        .options = furrr_options(seed = TRUE))
+```
+
+
+^[The thumbnail photo is by [Maxime Lebrun](https://unsplash.com/@flub?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)]
+
+
+

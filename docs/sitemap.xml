@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://vincentbagilet.github.io/</loc>
-    <lastmod>2022-06-20T10:34:20+02:00</lastmod>
+    <lastmod>2022-09-14T10:07:50-04:00</lastmod>
   </url>
   <url>
     <loc>https://vincentbagilet.github.io/projects.html</loc>
-    <lastmod>2022-04-08T16:52:21+02:00</lastmod>
+    <lastmod>2022-10-13T12:26:26-04:00</lastmod>
   </url>
   <url>
     <loc>https://vincentbagilet.github.io/research.html</loc>
-    <lastmod>2022-06-20T10:35:03+02:00</lastmod>
+    <lastmod>2022-06-20T04:35:03-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vincentbagilet.github.io/posts/2022-10-13-running-simulations/</loc>
+    <lastmod>2022-10-13T17:40:08-04:00</lastmod>
   </url>
   <url>
     <loc>https://vincentbagilet.github.io/posts/2021-06-22-mediocrethemes/</loc>
-    <lastmod>2021-09-02T13:14:27+02:00</lastmod>
+    <lastmod>2021-09-02T07:14:27-04:00</lastmod>
   </url>
 </urlset>
