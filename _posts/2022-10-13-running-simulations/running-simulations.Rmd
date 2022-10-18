@@ -1,7 +1,7 @@
 ---
 title: "Running simulations"
 description: |
-  In this short tutorial I present a simple workflow I use to run econometrics simulations in R.
+  In this short tutorial I present a simple workflow I use to run simulations for regression analysis in R.
 preview: spiral.jpg
 categories:
   - R
@@ -31,7 +31,7 @@ xaringanExtra::use_clipboard()
 set.seed(2)
 ```
 
-This tutorial describes the workflow I use to run fake-data econometrics simulations in R. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
+This tutorial describes the workflow I use to run fake-data simulations for regression analysis in R. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
 
 I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On [the website of one of our projects](https://vincentbagilet.github.io/causal_inflation/), we describe how we ran more advanced fake data simulations for various causal inference methods (IV, event-study, RDD, matching). On [the website of another project](https://vincentbagilet.github.io/inference_pollution/), we describe how we ran simulations based on real data, also for various causal inference methods.
 
@@ -60,7 +60,7 @@ for individual $i \in \{1, .., N\}$ where $u_i \sim \mathcal{N}(0, \sigma_u^2)$ 
 
 ### Packages
 
-First load the packages necessary to run the simulation. Here I also load an additional and non necessary package that I useto produce my graphs.
+First load the packages necessary to run the simulation. Here I also load an additional and a non-necessary package to set my default ggplot theme for graphs.
 
 ```{r packages}
 #necessary packages
@@ -69,7 +69,7 @@ library(broom)
 
 #additional packages
 library(mediocrethemes) #my ggplot theme package
-mediocrethemes::set_mediocre_all() #to produce all graphs with my theme
+mediocrethemes::set_mediocre_all(gradient = "right") #to produce all graphs with my theme
 ```
 
 ### Define a set of baseline parameters
@@ -132,7 +132,7 @@ I then write a function that takes the generated data as input, runs the estimat
 
 ```{r run_estim}
 run_estim <- function(data) {
-  reg <- lm(data = data, y ~ x) %>%
+  lm(data = data, y ~ x) %>%
     broom::tidy() %>%
     filter(term == "x") 
 }
@@ -141,7 +141,7 @@ run_estim <- function(data) {
 This function, applied to `example_data`, returns the following data set:
 
 ```{r ex_estim, echo=FALSE}
-run_estim(example_data) %>% kable()
+run_estim(example_data) %>% kable(digits = 2)
 ```
 
 ### Compute simulation
@@ -245,13 +245,13 @@ I then make the graph of interest:
 result_sim_long %>% 
   mutate(sigma_x = as.factor(sigma_x)) %>% 
   ggplot() +
-  geom_density(aes(x = estimate, color = sigma_x), alpha = 0) +
+  geom_density(aes(x = estimate, color = sigma_x), alpha = 0.03) +
   labs(
-    title = "Distribution of the estimates of beta",
+    title = "Distribution of estimates of beta",
     subtitle = "Comparison for different values of the standard deviation of x",
     color = "sd(x)",
     fill = "sd(x)",
-    x = "Value of the estimate of beta",
+    x = "Estimate of beta",
     y = "Density"
   )
 ```
@@ -298,7 +298,7 @@ generate_data <- function(N,
 
 #function to run the estimation
 run_estim <- function(data) {
-  reg <- lm(data = data, y ~ x) %>%
+  lm(data = data, y ~ x) %>%
     broom::tidy() %>%
     filter(term == "x") 
 }
@@ -326,7 +326,7 @@ result_sim <- future_pmap_dfr(param, compute_sim,
 ```
 
 
-^[The thumbnail photo is by [Maxime Lebrun](https://unsplash.com/@flub?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)]
+^[The thumbnail photo: [Maxime Lebrun](https://unsplash.com/@flub?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)]
 
 
 

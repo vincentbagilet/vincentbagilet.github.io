@@ -3,7 +3,7 @@
   <channel>
     <title>Vincent Bagilet</title>
     <link>https://vincentbagilet.github.io/</link>
-    <atom:link href="https://vincentbagilet.github.io/projects.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://vincentbagilet.github.io/projects.knit.xml" rel="self" type="application/rss+xml"/>
     <description>Vincent Bagilet
 </description>
     <generator>Distill</generator>
