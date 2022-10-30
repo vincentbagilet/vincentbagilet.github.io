@@ -1,7 +1,7 @@
 ---
 title: "Running simulations"
 description: |
-  In this short tutorial I present a simple workflow I use to run simulations for regression analysis in R.
+  In this short document I present a simple workflow I use to run simulations for regression analysis in R.
 preview: spiral.jpg
 categories:
   - R
@@ -31,9 +31,11 @@ xaringanExtra::use_clipboard()
 set.seed(2)
 ```
 
-This tutorial describes the workflow I use to run fake-data simulations for regression analysis in R. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
+This document describes the workflow I use to run fake-data simulations for regression analysis in R. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
 
 I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On [the website of one of our projects](https://vincentbagilet.github.io/causal_inflation/), we describe how we ran more advanced fake data simulations for various causal inference methods (IV, event-study, RDD, matching). On [the website of another project](https://vincentbagilet.github.io/inference_pollution/), we describe how we ran simulations based on real data, also for various causal inference methods.
+
+The workflow described here builds on [purrr](https://purrr.tidyverse.org/) and [tidyverse](https://www.tidyverse.org/) principles. This framework enables to easily and explicitly run simulations for several sets of parameter values. It also offers the possibility to very easily parallelize the code using the package [furrr](https://furrr.futureverse.org/index.html).
 
 # Simulation workflow
 
@@ -42,8 +44,6 @@ I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On
 - **Run the estimation** and extract the outcomes of interest,
 - **Compute one simulation** by combing the previous steps,
 - **Replicate the process** for a number of iterations and a set of parameters.
-
-We apply this workflow building on [purrr](https://purrr.tidyverse.org/) and more generally [tidyverse](https://www.tidyverse.org/) principles. 
 
 <!-- The following flowchart summarizes the workflow: -->
 
@@ -60,7 +60,7 @@ for individual $i \in \{1, .., N\}$ where $u_i \sim \mathcal{N}(0, \sigma_u^2)$ 
 
 ### Packages
 
-First load the packages necessary to run the simulation. Here I also load an additional and a non-necessary package to set my default ggplot theme for graphs.
+First, I load the packages necessary to run the simulation. Here I also load an additional and a non-necessary package to set my default ggplot theme for graphs, [mediocrethemes](https://vincentbagilet.github.io/mediocrethemes/).
 
 ```{r packages}
 #necessary packages
@@ -69,12 +69,13 @@ library(broom)
 
 #additional packages
 library(mediocrethemes) #my ggplot theme package
-mediocrethemes::set_mediocre_all(gradient = "right") #to produce all graphs with my theme
+mediocrethemes::set_mediocre_all(gradient = "right") #will create all the graphs
+#using my theme
 ```
 
 ### Define a set of baseline parameters
 
-Store the values of the baseline parameters in a one-row tibble, `baseline_param`:
+I store the values of the baseline parameters in a one-row tibble, `baseline_param`:
 
 ```{r baseline_param}
 baseline_param <- tibble(
@@ -128,7 +129,7 @@ example_data <- purrr::pmap_dfr(baseline_param, generate_data)
 
 ### Run the estimation
 
-I then write a function that takes the generated data as input, runs the estimation and returns the parameters of interest in a data frame. Here I am interested in estimates of $\beta$ and therefore only consider the results for the $x$ term.
+I then write a function that takes the generated data as input, runs the estimation and returns the parameters of interest in a data frame. In this example, I am interested in estimates of $\beta$ and therefore only consider the regression output for the $x$ term.
 
 ```{r run_estim}
 run_estim <- function(data) {
@@ -146,7 +147,7 @@ run_estim(example_data) %>% kable(digits = 2)
 
 ### Compute simulation
 
-I then combine `generate_data` and `run_estim` into one function to compute one iteration of the simulation. I also add a line of code to store the parameters used in this simulation. 
+I then combine `generate_data` and `run_estim` into a function that computes one iteration of the simulation. I also add a line of code to store the parameters used in this simulation. 
 
 ```{r compute_sim}
 compute_sim <- function(...) {
@@ -160,7 +161,7 @@ compute_sim <- function(...) {
 
 To run several iterations of the simulation, I build a data frame of parameters such that each row contains the values of the parameters for one single iteration of the simulation. 
 
-If one wants to run `n_iter` iterations of the simulation for the baseline parameter values, they only have to replicate the one-row tibble `baseline_param` using `crossing`.
+If one wants to run `n_iter` iterations of the simulation for the baseline parameter values, they only have to replicate the one-row tibble `baseline_param` using `crossing` for instance.
 
 ```{r define_rep_param}
 n_iter <- 5
@@ -176,13 +177,13 @@ It produces a data frame with `n_iter` (here 5) identical rows:
 param %>% kable()
 ```
 
-Then simply pass the resulting set of parameter values to the function `compute_sim` using `pmap_dfr`:
+Then I cna pass the resulting set of parameter values to the function `compute_sim` using `pmap_dfr`:
 
 ```{r}
 result_sim <- pmap_dfr(param, compute_sim)
 ```
 
-Using this method, onz can also easily run a series of simulations for several parameter values. Here, I vary `sigma_x` and run `n_iter` iterations of the simulation for each value of the varying parameter `sigma_x`.
+Using this method, one can also easily run a series of simulations for several parameter values. Here, I vary `sigma_x` and run `n_iter` iterations of the simulation for each value of the varying parameter `sigma_x`.
 
 ```{r replicate_sim}
 n_iter <- 5
@@ -202,15 +203,21 @@ It produces a data frame with `n_iter` times the number of values for the varyin
 param_sigma_x %>% kable()
 ```
 
-I can then pass this data frame to `compute_sim` to obtain our simulation results.
+I can then pass this data frame to `compute_sim` to obtain my simulation results.
 
-```{r result_sim_sigma_x, eval=FALSE}
+```{r result_sim_sigma_x}
 result_sim_sigma_x <- pmap_dfr(param_sigma_x, compute_sim)
+```
+
+Here are the results!
+
+```{r print_result_sim_sigma_x, echo=FALSE}
+result_sim_sigma_x %>% kable()
 ```
 
 ### Parallel computing
 
-The simulation process can easily be parallelized using [furrr](https://furrr.futureverse.org/index.html). To do so, one should use `future_pmap_dfr` instead of `pmap_dfr`. To do that, define the type of session to use and potentially set the seed option to `TRUE`.
+The simulation process can easily be parallelized using [furrr](https://furrr.futureverse.org/index.html). To do so, I use `future_pmap_dfr` instead of `pmap_dfr`. To do that, I need to first define the type of session to use and potentially set the seed option to `TRUE`.
 
 ```{r future}
 library(furrr)
@@ -223,7 +230,7 @@ result_sim <- future_pmap_dfr(param, compute_sim,
 
 ### Analysis of the results
 
-I then briefly analyse the output of this simulation. In this example, we are interested in studying how the distribution of the estimates varies with the value of $\sigma_x$. I therefore run a longer simulation with 500 iterations and 4 values for $\sigma_x$. 
+I then briefly analyse the output of this simulation. In this example, I am interested in studying how the distribution of the estimates varies with the value of $\sigma_x$. I therefore run a longer simulation with 500 iterations and 4 values for $\sigma_x$. 
 
 ```{r long_sim, echo=FALSE}
 n_iter <- 500
