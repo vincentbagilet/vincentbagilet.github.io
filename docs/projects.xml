@@ -9,7 +9,7 @@
     <generator>Distill</generator>
     <lastBuildDate>Thu, 13 Oct 2022 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Running simulations</title>
+      <title>A workflow to run simulations</title>
       <dc:creator>Vincent Bagilet</dc:creator>
       <link>https://vincentbagilet.github.io/posts/2022-10-13-running-simulations</link>
       <description>In this short document I present a simple workflow I use to run simulations for regression analysis in R.</description>

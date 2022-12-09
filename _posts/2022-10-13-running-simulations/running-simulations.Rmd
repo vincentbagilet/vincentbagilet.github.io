@@ -1,5 +1,5 @@
 ---
-title: "Running simulations"
+title: "A workflow to run simulations"
 description: |
   In this short document I present a simple workflow I use to run simulations for regression analysis in R.
 preview: spiral.jpg
@@ -33,7 +33,7 @@ set.seed(2)
 
 This document describes the workflow I use to run fake-data simulations for regression analysis in R. At the end of the document one can find a template to run a simple simulation from A to Z. It can be copied/pasted and easily adapted to address specific questions. 
 
-I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On [the website of one of our projects](https://vincentbagilet.github.io/causal_inflation/), we describe how we ran more advanced fake data simulations for various causal inference methods (IV, event-study, RDD, matching). On [the website of another project](https://vincentbagilet.github.io/inference_pollution/), we describe how we ran simulations based on real data, also for various causal inference methods.
+I developed this workflow with [Léo Zabrocki](https://lzabrocki.github.io/). On [the website of one of our projects](https://vincentbagilet.github.io/causal_exaggeration/), we describe how we ran more advanced fake data simulations for various causal inference methods (IV, event-study, RDD, matching). On [the website of another project](https://vincentbagilet.github.io/inference_pollution/), we describe how we ran simulations based on real data, also for various causal inference methods.
 
 The workflow described here builds on [purrr](https://purrr.tidyverse.org/) and [tidyverse](https://www.tidyverse.org/) principles. This framework enables to easily and explicitly run simulations for several sets of parameter values. It also offers the possibility to very easily parallelize the code using the package [furrr](https://furrr.futureverse.org/index.html).
 

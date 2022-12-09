@@ -32,9 +32,9 @@ knitr::include_graphics(here::here("images/balloon.jpg"))
 
 Paper with Léo Zabrocki.
 
-The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_inflation/causal_inflation_paper.pdf).
+The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_inflation/causal_exaggeration_paper.pdf).
 
-The project website can be accessed [here](https://vincentbagilet.github.io/causal_inflation/).
+The project website can be accessed [here](https://vincentbagilet.github.io/causal_exaggeration/).
 
 <!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
 
@@ -46,7 +46,7 @@ The project website can be accessed [here](https://vincentbagilet.github.io/caus
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="57%"}
-### Why Acute Health Effects of Air Pollution Could be Inflated
+### Why Some Acute Health Effects of Air Pollution Could be Inflated
 
 Paper with Léo Zabrocki.
 
