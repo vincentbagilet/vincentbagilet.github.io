@@ -12,7 +12,7 @@ output:
   postcards::trestles
 ---
 
-Hi, 
+Hi,
 
 I am a fifth year PhD student in [Sustainable Development](https://www.sipa.columbia.edu/academics/programs/phd-sustainable-development) at Columbia University. 
 
