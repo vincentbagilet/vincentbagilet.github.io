@@ -16,7 +16,7 @@ Hi,
 
 I am a fifth year PhD student in [Sustainable Development](https://www.sipa.columbia.edu/academics/programs/phd-sustainable-development) at Columbia University. 
 
-My main research interests revolve around the determinants of **environmental attitudes** of individuals. I use observational data to study to what extent social norms, culture, public policies and peer effects can affect environmental behavior and attitudes of individuals. 
+My main research interests revolve around the determinants of **environmental attitudes**. I use observational data to study to what extent social norms, culture, public policies and peer effects can affect environmental behavior and attitudes of individuals and social groups. 
 
 Overall, I am particularly enthusiastic about the use of **unconventional data** to analyze environment related issues. I also love working on projects that can help me develop my knowledge on **causal inference** and **data visualization**.
 
