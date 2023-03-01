@@ -30,8 +30,6 @@ knitr::include_graphics(here::here("images/balloon.jpg"))
 ::: {.column width="57%"}
 ### Unconfounded but Inflated Causal Estimates
 
-Paper with Léo Zabrocki.
-
 The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_inflation/causal_exaggeration_paper.pdf).
 
 The project website can be accessed [here](https://vincentbagilet.github.io/causal_exaggeration/).
@@ -47,8 +45,6 @@ The project website can be accessed [here](https://vincentbagilet.github.io/caus
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="57%"}
 ### Why Some Acute Health Effects of Air Pollution Could be Inflated
-
-Paper with Léo Zabrocki.
 
 The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/wp_bagilet_zabrocki.pdf).
 
