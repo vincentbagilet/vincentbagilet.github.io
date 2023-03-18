@@ -46,9 +46,9 @@ The project website can be accessed [here](https://vincentbagilet.github.io/caus
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="57%"}
-### Why Some Acute Health Effects of Air Pollution Could be Inflated
+### Estimating Small Effects: Short-term Health Effects of Air Pollution
 
-The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/wp_bagilet_zabrocki.pdf).
+The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf).
 
 The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/).
 :::
