@@ -30,9 +30,9 @@ knitr::include_graphics(here::here("images/balloon.jpg"))
 ::: {.column width="57%"}
 ### Unconfounded but Inflated Causal Estimates
 
-A **new version**, with substantial additions, will be published soon. A preliminary version of the new introduction is available [here](causal_exaggeration_intro.pdf).
+A **new version**, with substantial additions, will be published soon. A preliminary version of the new introduction is available [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_intro.pdf).
 
-The previous version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_inflation/causal_exaggeration_paper.pdf). 
+The previous version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf). 
 
 The project website can be accessed [here](https://vincentbagilet.github.io/causal_exaggeration/).
 
