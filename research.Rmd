@@ -93,6 +93,7 @@ knitr::include_graphics(here::here("images/illustration_car.png"))
 This paper identifies tangible design parameters that might lead to inaccurate estimates of relatively small effects. Low statistical power not only makes relatively small effect difficult to detect but resulting published estimates also exaggerate true effect sizes. We first document the existence of this issue in the epidemiology and economics literature of interest. Then, we identify its drivers using real data simulations that replicate most prevailing inference methods. Finally, we argue relevance to many other literatures and propose a principled workflow to evaluate and avoid exaggeration when conducting a non-experimental study.
 </div> 
 
+<br />
 
 ## Work in progress
 
