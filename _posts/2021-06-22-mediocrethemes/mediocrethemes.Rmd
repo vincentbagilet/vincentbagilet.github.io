@@ -6,9 +6,7 @@ categories:
   - R
   - Data viz
   - ggplot
-author:
-  - name: Vincent Bagilet
-    url: {https://vincentbagilet.github.io}
+  - Package
 date: 2021-06-22
 citation: false
 output:
@@ -36,14 +34,19 @@ I tried my best to make my code reproducible. Users should be able to easily ada
 The base color palette is:
 
 ```{r}
+library(ggplot2)
 library(mediocrethemes)
 
 set_mediocre_all()
 
-qplot(x = 1:15, y = 1, fill = factor(1:15), geom = "tile") +
-  theme_void() +
-  theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) +
-  theme(legend.position="none") 
+ggplot(
+  data = data.frame(x = 1:15, y = 1),
+  aes(x, y, fill = factor(1:15))
+) +
+geom_tile() +
+theme_void() +
+theme(plot.margin = unit(c(-0.58,-0.9,-0.58,-0.9), "cm")) +
+theme(legend.position="none") 
 ```
 
 

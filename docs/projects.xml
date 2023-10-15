@@ -7,10 +7,20 @@
     <description>Vincent Bagilet
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 13 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Rallicagram</title>
+      <link>https://vincentbagilet.github.io/posts/2023-05-15-rallicagram</link>
+      <description>I made a R wrapper for the Gallicagram API. It provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.</description>
+      <category>R</category>
+      <category>NLP</category>
+      <category>Package</category>
+      <guid>https://vincentbagilet.github.io/posts/2023-05-15-rallicagram</guid>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://vincentbagilet.github.io/posts/2023-05-15-rallicagram/gallicagram_climatique.png" medium="image" type="image/png" width="6500" height="5200"/>
+    </item>
     <item>
       <title>A workflow to run simulations</title>
-      <dc:creator>Vincent Bagilet</dc:creator>
       <link>https://vincentbagilet.github.io/posts/2022-10-13-running-simulations</link>
       <description>In this short document I present a simple workflow I use to run simulations for regression analysis in R.</description>
       <category>R</category>
@@ -22,12 +32,12 @@
     </item>
     <item>
       <title>mediocrethemes</title>
-      <dc:creator>Vincent Bagilet</dc:creator>
       <link>https://vincentbagilet.github.io/posts/2021-06-22-mediocrethemes</link>
       <description>I made a small R package providing ready to use ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.</description>
       <category>R</category>
       <category>Data viz</category>
       <category>ggplot</category>
+      <category>Package</category>
       <guid>https://vincentbagilet.github.io/posts/2021-06-22-mediocrethemes</guid>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       <media:content url="https://vincentbagilet.github.io/posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="3900" height="2400"/>

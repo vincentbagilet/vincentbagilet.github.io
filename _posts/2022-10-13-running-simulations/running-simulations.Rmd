@@ -7,9 +7,6 @@ categories:
   - R
   - Simulations
   - Tutorial
-author:
-  - name: Vincent Bagilet
-    url: {https://vincentbagilet.github.io}
 date: 2022-10-13
 citation: false
 output:

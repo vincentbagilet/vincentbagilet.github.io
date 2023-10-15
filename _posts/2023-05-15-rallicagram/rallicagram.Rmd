@@ -1,0 +1,76 @@
+---
+title: "Rallicagram"
+description: |
+  I made a R wrapper for the Gallicagram API. It provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.
+preview: gallicagram_climatique.png
+categories:
+  - R
+  - NLP
+  - Package
+date: 2023-05-15
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+`rallicagram` is a R wrapper for the [Gallicagram API](https://regicid.github.io/api). More info can be found on [`rallicagram` website](https://vincentbagilet.github.io/rallicagram/index.html) and in particular in its [main vignette](https://vincentbagilet.github.io/rallicagram/articles/rallicagram.html).
+
+In a nutshell, it enables to easily and quickly run some basic Natural Language Processing analyzes on a set of French corpora.
+For instance, I use rallicagram to analyze discourses around the environment in France. One line of code is enough to describe the newspaper coverage of a specific term between 1970 and today. Here, "climatique", in the *Le Monde* newspaper:
+
+```{r ex_occur, eval=FALSE}
+library(rallicagram)
+
+gallicagram(
+  keyword = "climatique", 
+  corpus = "lemonde", 
+  from = 1970, 
+  to = 2022,
+  resolution = "monthly"
+) 
+```
+
+```{r ex_occur_table, echo=FALSE}
+library(rallicagram)
+
+ex_data <- gallicagram(
+  keyword = "climatique", 
+  corpus = "lemonde", 
+  from = 1970, 
+  to = 2022,
+  resolution = "monthly"
+)
+
+ex_data |> 
+  head() |> 
+  knitr::kable()
+```
+
+Here is the plot of the time series obtained:
+
+```{r graph_evol, dpi=300, out.width="70%", fig.align = "center", echo=FALSE, message=FALSE}
+library(mediocrethemes)
+set_mediocre_all()
+
+ex_data |> 
+  ggplot(aes(x = date, y = prop_occur)) + 
+  geom_line(linewidth = 0.7) +
+  labs(
+    title = "Evolution of occurrences of 'climatique' (climate change)",
+    subtitle = "In the french newspaper Le Monde",
+    x = NULL,
+    y = "Proportion of occurrences"
+  )
+  
+```
+
+This package also allows to run more thorough analyzes. For instance, it enables to study the context in which keywords are used. Here is an example from my project on environmental representations: 
+
+```{r graph_associated, dpi=300, out.width="70%", fig.align = "center", echo=FALSE, message=FALSE}
+knitr::include_graphics("gallicagram_climatique.png")
+```
+
+More info on Gallicagram and its API can be found on a [preprint](https://osf.io/preprints/socarxiv/84bf3/) by Gallicagram developers [Benoît de Courson](https://regicid.github.io/) and [Benjamin Azoulay](https://benjamin-azoulay.my.canva.site/), on the "Notice" tab of the [Gallicagram website](https://shiny.ens-paris-saclay.fr/app/gallicagram) and on the [API documentation](https://regicid.github.io/api). I built the wrapper through discussions with Benoît and Benjamin. It enabled us to develop a few additional API routes in order to offer to users the possibility of running more thorough NLP analyzes directly through the API.
+
+
+

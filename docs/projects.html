@@ -459,8 +459,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -2010,6 +2010,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*body {
     background-color: rgba(249, 250, 247, 0.8);
   }*/
+
+  .button_link {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    /*font-family: arial, sans-serif;*/
+    /*input has OS specific font-family*/
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+    cursor: pointer;
+    width: fit-content;
+    font-size:15px;
+    font-family: "Lora", serif;
+  }
+
+  /* Hide abstracts */
+  #abstract {
+  display: none;
+  font-size:13px;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2166,7 +2187,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2344,13 +2365,30 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Coding">Coding</h1>
+<a href="posts/2023-05-15-rallicagram/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["R","NLP","Package"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 15, 2023</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2023-05-15-rallicagram/gallicagram_climatique.png"/>
+</div>
+<div class="description">
+<h2>Rallicagram</h2>
+<div class="dt-tags">
+<div class="dt-tag">R</div>
+<div class="dt-tag">NLP</div>
+<div class="dt-tag">Package</div>
+</div>
+<p>I made a R wrapper for the Gallicagram API. It provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.</p>
+</div>
+</a>
 <a href="posts/2022-10-13-running-simulations/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["R","Simulations","Tutorial"]}</script>
 <div class="metadata">
 <div class="publishedDate">Oct. 13, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Vincent Bagilet</div>
-</div>
+<div class="dt-authors"></div>
 </div>
 <div class="thumbnail">
 <img src="posts/2022-10-13-running-simulations/spiral.jpg"/>
@@ -2366,12 +2404,10 @@ function init_posts_list() {
 </div>
 </a>
 <a href="posts/2021-06-22-mediocrethemes/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["R","Data viz","ggplot"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["R","Data viz","ggplot","Package"]}</script>
 <div class="metadata">
 <div class="publishedDate">June 22, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Vincent Bagilet</div>
-</div>
+<div class="dt-authors"></div>
 </div>
 <div class="thumbnail">
 <img src="posts/2021-06-22-mediocrethemes/mediocrethemes_files/figure-html5/unnamed-chunk-1-1.png"/>
@@ -2382,6 +2418,7 @@ function init_posts_list() {
 <div class="dt-tag">R</div>
 <div class="dt-tag">Data viz</div>
 <div class="dt-tag">ggplot</div>
+<div class="dt-tag">Package</div>
 </div>
 <p>I made a small R package providing ready to use ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.</p>
 </div>
@@ -2393,7 +2430,7 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:Articles">Articles</a>
-<span class="category-count">(2)</span>
+<span class="category-count">(3)</span>
 </li>
 <li>
 <a href="#category:Data_viz">Data viz</a>
@@ -2404,8 +2441,16 @@ function init_posts_list() {
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#category:R">R</a>
+<a href="#category:NLP">NLP</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Package">Package</a>
 <span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:R">R</a>
+<span class="category-count">(3)</span>
 </li>
 <li>
 <a href="#category:Simulations">Simulations</a>

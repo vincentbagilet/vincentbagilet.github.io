@@ -116,3 +116,24 @@ b, strong {
   background-color: rgba(249, 250, 247, 0.8);
 }*/
 
+.button_link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  /*font-family: arial, sans-serif;*/
+  /*input has OS specific font-family*/
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+  cursor: pointer;
+  width: fit-content;
+  font-size:15px;
+  font-family: "Lora", serif;
+}
+
+/* Hide abstracts */
+#abstract {
+display: none;
+font-size:13px;
+}
+

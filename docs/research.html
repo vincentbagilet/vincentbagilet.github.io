@@ -455,8 +455,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -2006,6 +2006,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*body {
     background-color: rgba(249, 250, 247, 0.8);
   }*/
+
+  .button_link {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    /*font-family: arial, sans-serif;*/
+    /*input has OS specific font-family*/
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+    cursor: pointer;
+    width: fit-content;
+    font-size:15px;
+    font-family: "Lora", serif;
+  }
+
+  /* Hide abstracts */
+  #abstract {
+  display: none;
+  font-size:13px;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2162,7 +2183,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2214,8 +2235,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>I am currently working on a couple of papers linked to causal inference methods and on a few projects on the determinants of environmental attitudes of individuals. Most of the latter ones are still at an embryonic stage. I will share my progresses on those here as soon as possible.</p>
-<h1 id="work-in-progress">Work in progress</h1>
+<script>
+function hide_buttons(abstract) {
+    var x = document.getElementById(abstract);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<h2 id="working-papers">Working Papers</h2>
 <div style="display: flex; align-items: center; justify-content: space-between;">
 <div class="column" style="width:40%;">
 <div class="layout-chunk" data-layout="l-body">
@@ -2223,18 +2253,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 <div class="column" style="width:57%;">
-<h3 id="unconfounded-but-inflated-causal-estimates">Unconfounded but Inflated Causal Estimates</h3>
-<p>A <strong>new version</strong>, with substantial additions, will be published soon. A preliminary version of the new introduction is available <a href="https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_intro.pdf">here</a>.</p>
-<p>The previous version of the working paper can be downloaded <a href="https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf">here</a>.</p>
+<h3 id="causal-exaggeration-unconfounded-but-inflated-causal-estimates">Causal Exaggeration: Unconfounded but Inflated Causal Estimates</h3>
+<p>A preliminary version of the introduction is available <a href="https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration.pdf">here</a>.</p>
+<!-- The previous version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf).  -->
 <p>The project website can be accessed <a href="https://vincentbagilet.github.io/causal_exaggeration/">here</a>.</p>
-<!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
-<!-- The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/). -->
 </div>
+</div>
+<button class="button_link" role="button" onclick="hide_buttons(&#39;abstract_causal_exagg&#39;)">
+Abstract
+</button>
+<div id="abstract_causal_exagg" style="display:none;">
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>The credibility revolution in economics has made causal inference methods ubiquitous. At the same time, an increasing amount of evidence has highlighted that the literature strongly favors statistically significant results. I show that these two phenomena interact in a way that can substantially worsen the reliability of published estimates: even when causal identification strategies successfully reduce bias caused by confounders, they can decrease statistical power and create another type of bias, leading to exaggerated effect sizes. This exaggeration is consequential in environmental economics, as cost-benefit analyses turn estimates into decision-making parameters for policy makers. I characterize this trade-off using a formal mathematical derivation and realistic Monte Carlo simulations replicating prevailing identification strategies. I then discuss potential avenues to address it.</p>
 </div>
 <p><br /></p>
 <div style="display: flex; align-items: center; justify-content: space-between;">
 <div class="column" style="width:57%;">
-<h3 id="estimating-small-effects-short-term-health-effects-of-air-pollution">Estimating Small Effects: Short-term Health Effects of Air Pollution</h3>
+<h3 id="accurately-estimating-small-effects-air-pollution-and-health">Accurately Estimating Small Effects: Air Pollution and Health</h3>
 <p>The last version of the working paper can be downloaded <a href="https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf">here</a>.</p>
 <p>The project website can be accessed <a href="https://vincentbagilet.github.io/inference_pollution/">here</a>.</p>
 </div>
@@ -2244,6 +2281,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 </div>
+<button class="button_link" role="button" onclick="hide_buttons(&#39;abstract_inference_pollution&#39;)">
+Abstract
+</button>
+<div id="abstract_inference_pollution" style="display:none;">
+<p>This paper identifies tangible design parameters that might lead to inaccurate estimates of relatively small effects. Low statistical power not only makes relatively small effect difficult to detect but resulting published estimates also exaggerate true effect sizes. We first document the existence of this issue in the epidemiology and economics literature of interest. Then, we identify its drivers using real data simulations that replicate most prevailing inference methods. Finally, we argue relevance to many other literatures and propose a principled workflow to evaluate and avoid exaggeration when conducting a non-experimental study.</p>
+</div>
+<h2 id="work-in-progress">Work in progress</h2>
+<p><strong>Burden and Acceptability of the French Carbon and Gasoline Taxes</strong></p>
+<p><strong>Peer Effects in Pro-Environmental Behaviours</strong>, joint with <a href="https://marionleroutier.github.io/">Marion Leroutier</a>, <a href="https://www.pik-potsdam.de/members/theokonc">Théo Konc</a></p>
+<p><strong>The Environment in the Public Sphere: Structural vs Individual Discourses</strong></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

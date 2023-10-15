@@ -15,9 +15,18 @@ opts_chunk$set(fig.path = "images/",
                fig.align = "center")  
 ```
 
-I am currently working on a couple of papers linked to causal inference methods and on a few projects on the determinants of environmental attitudes of individuals. Most of the latter ones are still at an embryonic stage. I will share my progresses on those here as soon as possible. 
+<script>
+function hide_buttons(abstract) {
+    var x = document.getElementById(abstract);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 
-# Work in progress
+## Working Papers
 
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
@@ -28,25 +37,44 @@ knitr::include_graphics(here::here("images/balloon.jpg"))
 :::
 
 ::: {.column width="57%"}
-### Unconfounded but Inflated Causal Estimates
+### Causal Exaggeration: Unconfounded but Inflated Causal Estimates
 
-A **new version**, with substantial additions, will be published soon. A preliminary version of the new introduction is available [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_intro.pdf).
+A preliminary version of the introduction is available [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration.pdf).
 
-The previous version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf). 
+<!-- The previous version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf).  -->
 
 The project website can be accessed [here](https://vincentbagilet.github.io/causal_exaggeration/).
 
-<!-- The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/paper.pdf). -->
-
-<!-- The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/). -->
 :::
 ::::
+
+<button class="button_link" role="button" onclick="hide_buttons('abstract_causal_exagg')">Abstract</button>
+<div id="abstract_causal_exagg" style="display:none;">
+
+```{r abstract_causal_exagg, echo=FALSE}
+abstract_causal_exagg <-
+  readr::read_file(
+    here::here(
+      "..",
+      "causal_exaggeration",
+      "paper",
+      "current_version",
+      "abstract",
+      "causal_exaggeration_abstract.tex"
+    )
+  )
+```
+
+`r abstract_causal_exagg`
+
+</div> 
+
 
 <br />
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="57%"}
-### Estimating Small Effects: Short-term Health Effects of Air Pollution
+### Accurately Estimating Small Effects: Air Pollution and Health
 
 The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf).
 
@@ -59,4 +87,20 @@ knitr::include_graphics(here::here("images/illustration_car.png"))
 ```
 :::
 ::::
+
+<button class="button_link" role="button" onclick="hide_buttons('abstract_inference_pollution')">Abstract</button>
+<div id="abstract_inference_pollution" style="display:none;">
+This paper identifies tangible design parameters that might lead to inaccurate estimates of relatively small effects. Low statistical power not only makes relatively small effect difficult to detect but resulting published estimates also exaggerate true effect sizes. We first document the existence of this issue in the epidemiology and economics literature of interest. Then, we identify its drivers using real data simulations that replicate most prevailing inference methods. Finally, we argue relevance to many other literatures and propose a principled workflow to evaluate and avoid exaggeration when conducting a non-experimental study.
+</div> 
+
+
+## Work in progress
+
+**Burden and Acceptability of the French Carbon and Gasoline Taxes**
+
+**Peer Effects in Pro-Environmental Behaviours**, joint with [Marion Leroutier](https://marionleroutier.github.io/), [Théo Konc](https://www.pik-potsdam.de/members/theokonc) 
+
+**The Environment in the Public Sphere: Structural vs Individual Discourses**
+
+
 
