@@ -50,7 +50,7 @@ Here is the plot of the time series obtained:
 
 ```{r graph_evol, dpi=300, out.width="70%", fig.align = "center", echo=FALSE, message=FALSE}
 library(mediocrethemes)
-set_mediocre_all()
+set_mediocre_all(pal = "portal")
 
 ex_data |> 
   ggplot(aes(x = date, y = prop_occur)) + 
