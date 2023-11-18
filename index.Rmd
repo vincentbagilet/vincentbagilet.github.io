@@ -16,7 +16,7 @@ Hi,
 
 I am a PhD candidate in [Sustainable Development](https://www.sipa.columbia.edu/academics/programs/phd-sustainable-development) at Columbia University. 
 
-My main research interests revolve around individual and collective **environmental attitudes**. I use observational data to study what shapes them and how they can in turn affect consumption behavior, participation in social movements or political demand.
+My main research interests revolve around individual and collective **environmental attitudes**. I use observational data to study what shapes them and how they can in turn affect consumption behavior, participation in social movements or demand for policy change.
 
 Overall, I am particularly enthusiastic about the use of **unconventional data** to analyze environment related issues. I also love working on projects that can help me develop my knowledge on **causal inference** and **data visualization**.
 
