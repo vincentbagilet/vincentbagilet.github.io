@@ -1,6 +1,0 @@
----
-title: "Coding"  # any name you want here
-description: |
-  A list of short and simple descriptions of some of my R-coding related projects.
-listing: posts # do this exactly
----
