@@ -70,7 +70,7 @@ This package also allows to run more thorough analyzes. For instance, it enables
 knitr::include_graphics("gallicagram_climatique.png")
 ```
 
-More info on Gallicagram and its API can be found on a [preprint](https://osf.io/preprints/socarxiv/84bf3/) by Gallicagram developers [Benoît de Courson](https://regicid.github.io/) and [Benjamin Azoulay](https://benjamin-azoulay.my.canva.site/), on the "Notice" tab of the [Gallicagram website](https://shiny.ens-paris-saclay.fr/app/gallicagram) and on the [API documentation](https://regicid.github.io/api). I built the wrapper through discussions with Benoît and Benjamin. It enabled us to develop a few additional API routes in order to offer to users the possibility of running more thorough NLP analyzes directly through the API.
+More info on Gallicagram and its API can be found on a [preprint](https://osf.io/preprints/socarxiv/84bf3/) by Gallicagram developers [Benoît de Courson](https://regicid.github.io/) and Benjamin Azoulay, on the "Notice" tab of the [Gallicagram website](https://shiny.ens-paris-saclay.fr/app/gallicagram) and on the [API documentation](https://regicid.github.io/api). I built the wrapper through discussions with Benoît and Benjamin. It enabled us to develop a few additional API routes in order to offer to users the possibility of running more thorough NLP analyzes directly through the API.
 
 
 
