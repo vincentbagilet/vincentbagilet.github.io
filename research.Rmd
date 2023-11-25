@@ -73,7 +73,7 @@ abstract_causal_exagg <-
 <br />
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
-::: {.column width="57%"}
+::: {.column width="55%"}
 ### Accurate Estimation of Small Effects: Air Pollution and Health
 
 The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf).
