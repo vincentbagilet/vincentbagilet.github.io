@@ -1,7 +1,7 @@
 ---
 title: "mediocrethemes"
 description: |
-  I made a small R package providing ready to use ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.
+  I made a small R package providing ready to use ggplot themes. Setting the theme for all graphs in a project only requires one short line of code.
 categories:
   - R
   - Data viz

@@ -33,7 +33,7 @@
     <item>
       <title>mediocrethemes</title>
       <link>https://vincentbagilet.github.io/posts/2021-06-22-mediocrethemes</link>
-      <description>I made a small R package providing ready to use ggplot themes. Setting the theme for all graphs in a document only requires one short line of code.</description>
+      <description>I made a small R package providing ready to use ggplot themes. Setting the theme for all graphs in a project only requires one short line of code.</description>
       <category>R</category>
       <category>Data viz</category>
       <category>ggplot</category>
