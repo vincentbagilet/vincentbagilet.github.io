@@ -16,7 +16,7 @@ output:
 `rallicagram` is a R wrapper for the [Gallicagram API](https://regicid.github.io/api). More info can be found on the [`rallicagram` website](https://vincentbagilet.github.io/rallicagram/index.html) and in particular in its [main vignette](https://vincentbagilet.github.io/rallicagram/articles/rallicagram.html).
 
 In a nutshell, it enables to easily and quickly run some basic Natural Language Processing analyzes on a set of French corpora.
-For instance, I use `rallicagram` to analyze discourses around the environment in France. It enables to recover the newspaper coverage of a specific term in a few lines one of code. Here, "climatique", in the *Le Monde* newspaper, between 1945 and today:
+For instance, I use `rallicagram` to analyze discourses around the environment in France. It enables to recover the newspaper coverage of a specific term in a few lines of code. Here, "climatique" (a rough proxy for "climate change"), in the *Le Monde* newspaper, between 1945 and today:
 
 ```{r ex_occur, eval=FALSE}
 rallicagram::gallicagram(keyword = "climatique") 
