@@ -1,7 +1,7 @@
 ---
 title: "Rallicagram"
 description: |
-  I made a R wrapper for the Gallicagram API. It provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.
+  I made a R wrapper for the Gallicagram API that provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.
 preview: gallicagram_climatique.png
 categories:
   - R
@@ -16,34 +16,28 @@ output:
 `rallicagram` is a R wrapper for the [Gallicagram API](https://regicid.github.io/api). More info can be found on the [`rallicagram` website](https://vincentbagilet.github.io/rallicagram/index.html) and in particular in its [main vignette](https://vincentbagilet.github.io/rallicagram/articles/rallicagram.html).
 
 In a nutshell, it enables to easily and quickly run some basic Natural Language Processing analyzes on a set of French corpora.
-For instance, I use rallicagram to analyze discourses around the environment in France. One line of code is enough to describe the newspaper coverage of a specific term between 1970 and today. Here, "climatique", in the *Le Monde* newspaper:
+For instance, I use `rallicagram` to analyze discourses around the environment in France. It enables to recover the newspaper coverage of a specific term in a few lines one of code. Here, "climatique", in the *Le Monde* newspaper, between 1945 and today:
 
 ```{r ex_occur, eval=FALSE}
-library(rallicagram)
-
-gallicagram(
-  keyword = "climatique", 
-  corpus = "lemonde", 
-  from = 1970, 
-  to = 2022,
-  resolution = "monthly"
-) 
+rallicagram::gallicagram(keyword = "climatique") 
 ```
 
 ```{r ex_occur_table, echo=FALSE}
 library(rallicagram)
+library(DT)
 
-ex_data <- gallicagram(
-  keyword = "climatique", 
-  corpus = "lemonde", 
-  from = 1970, 
-  to = 2022,
-  resolution = "monthly"
-)
+ex_data <- gallicagram(keyword = "climatique")
 
 ex_data |> 
-  head() |> 
-  knitr::kable()
+  DT::datatable(
+    filter = 'top', 
+    options = list(
+      pageLength = 10,
+      scrollY = TRUE,
+      scrollX = TRUE,
+      autoWidth = TRUE
+    )
+  )
 ```
 
 Here is the plot of the time series obtained:

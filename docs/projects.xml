@@ -7,16 +7,16 @@
     <description>Vincent Bagilet
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Rallicagram</title>
       <link>https://vincentbagilet.github.io/posts/2023-05-15-rallicagram</link>
-      <description>I made a R wrapper for the Gallicagram API. It provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.</description>
+      <description>I made a R wrapper for the Gallicagram API that provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.</description>
       <category>R</category>
       <category>NLP</category>
       <category>Package</category>
       <guid>https://vincentbagilet.github.io/posts/2023-05-15-rallicagram</guid>
-      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
       <media:content url="https://vincentbagilet.github.io/posts/2023-05-15-rallicagram/gallicagram_climatique.png" medium="image" type="image/png" width="6500" height="5200"/>
     </item>
     <item>
