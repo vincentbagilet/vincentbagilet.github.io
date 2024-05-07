@@ -1,6 +1,7 @@
 ---
 title: "Vincent Bagilet"
 image: "images/photo_site_round.png"
+favicon: images/favicon.ico
 angle: 130
 site: distill::distill_website
 links:

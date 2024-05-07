@@ -6,6 +6,11 @@
     <atom:link href="https://vincentbagilet.github.io/projects.xml" rel="self" type="application/rss+xml"/>
     <description>Vincent Bagilet
 </description>
+    <image>
+      <title>Vincent Bagilet</title>
+      <url>https://vincentbagilet.github.io/images/favicon.ico</url>
+      <link>https://vincentbagilet.github.io/</link>
+    </image>
     <generator>Distill</generator>
     <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate>
     <item>

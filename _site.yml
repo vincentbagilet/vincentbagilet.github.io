@@ -1,6 +1,7 @@
 name: "vincentbagilet_website"
 title: "Vincent Bagilet"
 theme: VB_website.css
+favicon: images/favicon.ico
 description: |
   Vincent Bagilet
 output_dir: "docs"
