@@ -158,7 +158,7 @@
 \newcommand{\cvworkingpaper}[5]{%
 	\normalsize \color{accent}  \textbf{#1} \color{body}
   	\ifstrequal{#2}{}{}{%
-  		\textit{, joint with #2}
+  		\textit{, joint with #2}%
 	} 
   	\ifstrequal{#3}{}{}{%
 		\href{#3}{

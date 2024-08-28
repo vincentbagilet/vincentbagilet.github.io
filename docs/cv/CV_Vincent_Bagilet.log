@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  18 DEC 2023 12:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  28 AUG 2024 13:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1153,88 +1153,44 @@ File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 LaTeX Font Warning: Font shape `U/fontawesometwo/b/n' undefined
 (Font)              using `U/fontawesometwo/m/n' instead on input line 107.
 
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 121.
 
 LaTeX Font Warning: Font shape `T1/lato-TLF/m/sc' undefined
-(Font)              using `T1/lato-TLF/m/n' instead on input line 115.
+(Font)              using `T1/lato-TLF/m/n' instead on input line 121.
 
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 123.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 127.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 171.
 
 LaTeX Font Warning: Font shape `T1/lato-TLF/b/sc' undefined
-(Font)              using `T1/lato-TLF/b/n' instead on input line 115.
+(Font)              using `T1/lato-TLF/b/n' instead on input line 171.
 
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 117.
-LaTeX Font Info:    Font shape `T1/lato-TLF/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 117.
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 121.
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
-(Font)              scaled to size 14.4pt on input line 121.
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 125.
-
-Overfull \hbox (3.2075pt too wide) in paragraph at lines 152--152
-[][][][]\U/fontawesomeone/b/n/10 ^^S[][][]  
- []
-
-
-Overfull \hbox (1.7875pt too wide) in paragraph at lines 152--152
-[][][][]\U/fontawesometwo/b/n/10 R[][][]  
- []
-
-
-Overfull \hbox (1.17165pt too wide) in paragraph at lines 152--152
-[][][][]\U/fontawesomeone/b/n/10.95 [[][][]  
- []
-
-
-Overfull \hbox (3.2075pt too wide) in paragraph at lines 155--155
-[][][][]\U/fontawesomeone/b/n/10 ^^S[][][]  
- []
-
-
-Overfull \hbox (1.7875pt too wide) in paragraph at lines 155--155
-[][][][]\U/fontawesometwo/b/n/10 R[][][]  
- []
-
-
-Overfull \hbox (1.17165pt too wide) in paragraph at lines 155--155
-[][][][]\U/fontawesomeone/b/n/10.95 [[][][]  
- []
-
-
-Overfull \hbox (3.2075pt too wide) in paragraph at lines 157--157
-[][][][]\U/fontawesomeone/b/n/10 ^^S[][][]  
- []
-
-
-Overfull \hbox (1.7875pt too wide) in paragraph at lines 157--157
-[][][][]\U/fontawesometwo/b/n/10 R[][][]  
- []
-
-
-Overfull \hbox (1.17165pt too wide) in paragraph at lines 157--157
-[][][][]\U/fontawesomeone/b/n/10.95 [[][][]  
- []
-
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 167.
 
 (/Users/vincentbagilet/Documents/Research/causal_exaggeration/paper/current_ver
-sion/abstract/causal_exaggeration_abstract.tex) [1
+sion/abstract/causal_exaggeration_abstract.tex)
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/sc' will be
+(Font)              scaled to size 10.95pt on input line 173.
+ [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}{/usr/local/texliv
 e/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/te
 xlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}]
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 233.
+(Font)              scaled to size 12.0pt on input line 237.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 233.
+(Font)              scaled to size 12.0pt on input line 237.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 282.
  [2]
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 310.
+(Font)              <6> on input line 326.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 310.
+(Font)              scaled to size 8.0pt on input line 326.
  [3] (./CV_Vincent_Bagilet.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1246,22 +1202,22 @@ Package logreq Info: Writing requests to 'CV_Vincent_Bagilet.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33415 strings out of 476025
- 669320 string characters out of 5790016
- 1874388 words of memory out of 5000000
- 53369 multiletter control sequences out of 15000+600000
- 762150 words of font info for 69 fonts, out of 8000000 for 9000
+ 33406 strings out of 476025
+ 669088 string characters out of 5790016
+ 1869388 words of memory out of 5000000
+ 53360 multiletter control sequences out of 15000+600000
+ 761518 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,118p,1351b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,118p,1329b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesom
 e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.p
 fb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pf
 b>
-Output written on CV_Vincent_Bagilet.pdf (3 pages, 118673 bytes).
+Output written on CV_Vincent_Bagilet.pdf (3 pages, 115887 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

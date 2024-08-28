@@ -15,11 +15,11 @@ output:
 
 Hi,
 
-I am a PhD candidate in [Sustainable Development](https://www.sipa.columbia.edu/academics/programs/phd-sustainable-development) at Columbia University. 
+I am a Postdoctoral Fellow in Economics at ENS Lyon and at the Center for Economic Research on Governance, Inequality and Conflict. 
 
 My main research interests revolve around individual and collective **environmental attitudes**. I use observational data to study what shapes them and how they can in turn affect consumption behavior, participation in social movements or demand for policy change.
 
-Overall, I am particularly enthusiastic about the use of **unconventional data** to analyze environment related issues. I also love working on projects that can help me develop my knowledge of **causal inference** and **data visualization**.
+Overall, I am particularly enthusiastic about the use of **unstructured data** to analyze environment related issues. I also love working on projects that can help me develop my knowledge of **causal inference** and **data visualization**.
 
 <!-- Prior to joining Columbia, I earned masters in [Quantitative Economics from the Paris School of Economics](https://www.parisschoolofeconomics.eu/en/teaching/masters-program/ppd-public-policy-and-development/), in [Environmental Economics from University Paris Saclay/AgroParisTech](https://www.universite-paris-saclay.fr/en/education/master/environmental-energy-and-transport-economics#presentation) and in Engineering with a specialization in Energy from [Ecole Centrale Lyon](https://www.ec-lyon.fr/en). -->
 
