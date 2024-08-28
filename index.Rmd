@@ -13,7 +13,7 @@ output:
   postcards::trestles
 ---
 
-I am a Postdoctoral Fellow in economics at ENS Lyon, in the Department of Economics and the [Center for Economic Research on Governance, Inequality and Conflict (CERGIC)](https://www.cergic-lyon.fr/).
+I am a Postdoctoral Fellow at ENS Lyon, in the Department of Economics and the [Center for Economic Research on Governance, Inequality and Conflict (CERGIC)](https://www.cergic-lyon.fr/).
 
 I completed a PhD in [Sustainable Development](https://www.sipa.columbia.edu/academics/programs/phd-sustainable-development) at Columbia University in 2024.
 
