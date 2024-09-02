@@ -156,7 +156,7 @@
 %  \medskip
 %}
 \newcommand{\cvworkingpaper}[5]{%
-	\normalsize \color{accent}  \textbf{#1} \color{body}
+	\normalsize \color{accent}  \textbf{#1}\color{body}
   	\ifstrequal{#2}{}{}{%
   		\textit{, joint with #2}%
 	} 

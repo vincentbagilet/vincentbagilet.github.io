@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  28 AUG 2024 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  2 SEP 2024 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1204,7 +1204,7 @@ Package logreq Info: Writing requests to 'CV_Vincent_Bagilet.run.xml'.
 Here is how much of TeX's memory you used:
  33406 strings out of 476025
  669088 string characters out of 5790016
- 1869388 words of memory out of 5000000
+ 1870388 words of memory out of 5000000
  53360 multiletter control sequences out of 15000+600000
  761518 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1214,7 +1214,7 @@ e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.p
 fb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pf
 b>
-Output written on CV_Vincent_Bagilet.pdf (3 pages, 115887 bytes).
+Output written on CV_Vincent_Bagilet.pdf (3 pages, 115838 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
