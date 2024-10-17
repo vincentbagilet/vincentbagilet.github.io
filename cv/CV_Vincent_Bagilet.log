@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  2 SEP 2024 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  17 OCT 2024 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1182,7 +1182,7 @@ e/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/te
 xlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}]
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 237.
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 237.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 282.
@@ -1203,10 +1203,10 @@ Package logreq Info: Writing requests to 'CV_Vincent_Bagilet.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  33406 strings out of 476025
- 669088 string characters out of 5790016
+ 669084 string characters out of 5790016
  1870388 words of memory out of 5000000
  53360 multiletter control sequences out of 15000+600000
- 761518 words of font info for 67 fonts, out of 8000000 for 9000
+ 783370 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,8n,118p,1329b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesom
@@ -1214,7 +1214,7 @@ e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.p
 fb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pf
 b>
-Output written on CV_Vincent_Bagilet.pdf (3 pages, 115838 bytes).
+Output written on CV_Vincent_Bagilet.pdf (3 pages, 116007 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

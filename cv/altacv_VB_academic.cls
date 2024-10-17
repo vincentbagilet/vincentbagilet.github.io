@@ -133,7 +133,7 @@
 
 \newcommand{\cvsubsection}[1]{%
   \smallskip%
-  {\color{emphasis}\large\textsc{#1}\par}
+  {\color{emphasis}\large\textbf{#1}\par}
   \vspace{0.5em}
   \medskip
 }
@@ -147,7 +147,7 @@
 }
 
 \newcommand{\cveventshort}[2]{%
-  {\normalsize \color{accent} \textbf{#1} \hfill}{\small #2 \par}
+  {\normalsize \color{accent} #1 \hfill}{\small #2 \par}
   \vspace{0.5em}
 }
 

@@ -174,7 +174,7 @@ It produces a data frame with `n_iter` (here 5) identical rows:
 param %>% kable()
 ```
 
-Then I cna pass the resulting set of parameter values to the function `compute_sim` using `pmap_dfr`:
+Then I can pass the resulting set of parameter values to the function `compute_sim` using `pmap_dfr`:
 
 ```{r}
 result_sim <- pmap_dfr(param, compute_sim)
