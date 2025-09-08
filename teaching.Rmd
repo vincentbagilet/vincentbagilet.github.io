@@ -32,26 +32,14 @@ Undergrad level (L3), half course
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
-[![](images/balcony.jpg){width=100% fig-alt="Simulations = repetition, reptetion. Photo by Nick Fewings on Unsplash.com"}](https://vincentbagilet.github.io/metrics_m2_2024/)
+[![](images/balcony.jpg){width=100% fig-alt="Simulations = repetition, reptetion. Photo by Nick Fewings on Unsplash.com"}](https://vincentbagilet.github.io/metrics_m2/)
 :::
 
 ::: {.column width="57%"}
-[Topics in Econometrics](https://vincentbagilet.github.io/metrics_m2_2024/) 
+[Topics in Econometrics](https://vincentbagilet.github.io/metrics_m2/) 
 
 Grad level (M2), half course
 
-:::
-::::
-
-:::: {style="display: flex; align-items: center; justify-content: space-between;"}
-::: {.column width="40%"}
-[![](images/toolbox.jpg){width=100% fig-alt="Photo by Quality Pixels on Unsplash.com"}](https://vincentbagilet.github.io/metrics_m1_2024/)
-:::
-
-::: {.column width="57%"}
-[Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/) 
-
-Grad level (M1), half course
 :::
 ::::
 
@@ -67,7 +55,12 @@ Grad level (M2), module of the *Machine Learning and Data Analysis* course
 :::
 ::::
 
-## Past Teaching 
+## Past Teaching
+
+### ENS de Lyon
+
+- [Data Visualization for Economics](https://vincentbagilet.github.io/data_viz_summer/) (PhD level - Summer School course - 2025)
+- [Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/) (Grad level - Half course - 2024)
 
 ### Columbia University (TA)
 

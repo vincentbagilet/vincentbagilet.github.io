@@ -28,25 +28,20 @@ function hide_buttons(abstract) {
 
 ## Working Papers
 
-
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
+
 ::: {.column width="40%"}
-```{r image_causal_inference, echo=FALSE}
-knitr::include_graphics(here::here("images/balloon.jpg"))
-```
+[![](images/balloon.jpg){width=100% fig-alt="Photo by Timur Garifov on Unsplash.com"}](https://vincentbagilet.github.io/causal_exaggeration/)
 :::
 
 ::: {.column width="57%"}
-### Causal Exaggeration: Unconfounded but Inflated Causal Estimates
+[Causal Exaggeration:<br />Unconfounded but Inflated Causal Estimates](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf)
 
-The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf).
 
-<!-- The previous version of the working paper can be downloaded [here](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf).  -->
-
-The project website can be accessed [here](https://vincentbagilet.github.io/causal_exaggeration/).
-
+<sub>Working paper [`r fontawesome::fa("file-pdf")`](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf), Project website [`r fontawesome::fa("external-link")`](https://vincentbagilet.github.io/causal_exaggeration/)</sub>
 :::
 ::::
+
 
 <button class="button_link" role="button" onclick="hide_buttons('abstract_causal_exagg')">Abstract</button>
 <div id="abstract_causal_exagg" style="display:none;">
@@ -72,36 +67,74 @@ abstract_causal_exagg <-
 
 <br />
 
+
+
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
-::: {.column width="55%"}
-### Accurate Estimation of Small Effects: Illustration Through Air Pollution and Health
-
-The last version of the working paper can be downloaded [here](https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf).
-
-The project website can be accessed [here](https://vincentbagilet.github.io/inference_pollution/).
-:::
 
 ::: {.column width="40%"}
-```{r image_inference_pollution, echo=FALSE}
-knitr::include_graphics(here::here("images/illustration_car.png"))
-```
+[![](images/illustration_car.png){width=100% fig-alt="©Getty - Getty Images"}](https://vincentbagilet.github.io/inference_pollution/)
+:::
+
+::: {.column width="57%"}
+[Accurate Estimation of Small Effects:<br />Illustration Through Air Pollution and Health](https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf)
+
+
+<sub>Working paper [`r fontawesome::fa("file-pdf")`](https://vincentbagilet.github.io/inference_pollution/inference_pollution_paper.pdf), Project website [`r fontawesome::fa("external-link")`](https://vincentbagilet.github.io/inference_pollution/)</sub>
 :::
 ::::
 
+
 <button class="button_link" role="button" onclick="hide_buttons('abstract_inference_pollution')">Abstract</button>
 <div id="abstract_inference_pollution" style="display:none;">
-This paper identifies tangible design parameters that might lead to inaccurate estimates of relatively small effects. Low statistical power not only makes relatively small effect difficult to detect but resulting published estimates also exaggerate true effect sizes. We first document the existence of this issue in the epidemiology and economics literature of interest. Then, we identify its drivers using real data simulations that replicate most prevailing inference methods. Finally, we argue relevance to many other literatures and propose a principled workflow to evaluate and avoid exaggeration when conducting a non-experimental study.
+
+```{r abstract_small_effects, echo=FALSE}
+abstract_small_effects <-
+  readr::read_file(
+    here::here(
+      "..",
+      "inference_pollution",
+      "paper",
+      "abstract",
+      "abstract_small_effects.tex"
+    )
+  )
+```
+
+`r abstract_small_effects`
+
 </div> 
 
+<br />
 <br />
 
 ## Work in progress
 
-**The Environment in the Public Sphere: Structural vs Individual Discourses**
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
 
-**Peer Effects in Pro-Environmental Behaviours**, joint with [Marion Leroutier](https://marionleroutier.github.io/), [Théo Konc](https://www.pik-potsdam.de/members/theokonc) 
+::: {.column width="40%"}
+![](images/vote_ladies.jpg){width=100%}
+:::
 
-**Burden and Acceptability of the French Carbon and Gasoline Taxes**
+::: {.column width="57%"}
+Peer Effects in Women’s Political Participation
+
+Joint with [Jade Ponsard](https://jadeponsard.github.io/)
+:::
+::::
+
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+
+::: {.column width="40%"}
+![](images/documentary.jpg){width=100%}
+:::
+
+::: {.column width="57%"}
+Climate Change Narratives:<br />Environmental News in French Newscasts
+
+Joint with [Elisa Mougin](https://sites.google.com/view/emougin/home?authuser=0)
+:::
+::::
+
 
 
 
