@@ -178,6 +178,15 @@
 	}
   	\medskip
 	}
+	
+\newcommand{\cvcourse}[3]{%
+	{\normalsize \color{accent}  #1\color{body}}
+  	\ifstrequal{#2}{}{\hfill}{%
+		\href{#2}{\footnotesize \color{NiceBlue}\faExternalLink\normalsize} \hfill
+	}
+	{\small #3 \par}
+  	\medskip
+	}
 
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}

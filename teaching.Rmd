@@ -45,13 +45,13 @@ Grad level (M2), half course
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
-![](images/text.jpg){width=100% fig-alt="Photo by Annie Spratt on Unsplash.com"}
+[![](images/text.jpg){width=100% fig-alt="Photo by Annie Spratt on Unsplash.com"}](https://vincentbagilet.github.io/tada_m2/)
 :::
 
 ::: {.column width="57%"}
-Text as Data
+[Text as Data](https://vincentbagilet.github.io/tada_m2/)
 
-Grad level (M2), module of the *Machine Learning and Data Analysis* course
+Grad level (M2), module of the *Machine Learning and Big Data Analysis* course
 :::
 ::::
 
@@ -59,7 +59,7 @@ Grad level (M2), module of the *Machine Learning and Data Analysis* course
 
 ### ENS de Lyon
 
-- [Data Visualization for Economics](https://vincentbagilet.github.io/data_viz_summer/) (PhD level - Summer School course - 2025)
+- [Data Visualization for Economics Research](https://vincentbagilet.github.io/data_viz_summer/) (PhD level - Summer School course - 2025)
 - [Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/) (Grad level - Half course - 2024)
 
 ### Columbia University (TA)

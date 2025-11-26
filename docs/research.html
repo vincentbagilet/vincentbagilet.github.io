@@ -20,8 +20,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -32,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -2209,7 +2210,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2290,7 +2291,10 @@ Abstract
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<p>The credibility revolution in economics has made causal inference methods ubiquitous. Simultaneously, an increasing amount of evidence highlights that the literature strongly favors statistically significant results. I show that these two phenomena interact in a way that can substantially worsen the reliability of published estimates: while causal identification strategies alleviate bias caused by confounders, they reduce statistical power and can create another type of bias—exaggeration— when combined with selection on significance. This is consequential as estimates are routinely turned into decision-making parameters for policy makers conducting cost-benefit analyses. I characterize this confounding-exaggeration trade-off theoretically and using realistic Monte Carlo simulations replicating prevailing identification strategies and document its prevalence in the literature. I then discuss potential avenues to address this issue.</p>
+<p>The credibility revolution has made causal inference methods ubiquitous in economics, yet it coexists with selection on significance. I show that these two phenomena interact in ways that reduce the reliability of published estimates: while causal identification strategies alleviate bias from confounders, they reduce statistical power and can generate another type of bias–exaggeration–when combined with selection on significance. I characterize this confounding-exaggeration trade-off theoretically and via realistic Monte Carlo simulations, and document its prevalence in the literature. I then propose practical solutions, including a tool to identify the variation actually driving identification.</p>
+<p>%The credibility revolution in economics has made causal inference methods ubiquitous. Simultaneously, an increasing amount of evidence highlights that the literature strongly favors statistically significant results. I show that these two phenomena interact in a way that can substantially worsen the reliability of published estimates: while causal identification strategies alleviate bias caused by confounders, they reduce statistical power and can create another type of bias—exaggeration— when combined with selection on significance. I characterize this confounding-exaggeration trade-off theoretically and using realistic Monte Carlo simulations replicating prevailing identification strategies and document its prevalence in the literature. I then present concrete solutions to address this issue when implementing a study, and in particular develop a tool to identify the variation actually used for identification.</p>
+<p>%Previous version
+% The credibility revolution in economics has made causal inference methods ubiquitous. Simultaneously, an increasing amount of evidence highlights that the literature strongly favors statistically significant results. I show that these two phenomena interact in a way that can substantially worsen the reliability of published estimates: while causal identification strategies alleviate bias caused by confounders, they reduce statistical power and can create another type of bias—exaggeration— when combined with selection on significance. This is consequential as estimates are routinely turned into decision-making parameters for policy makers conducting cost-benefit analyses. I characterize this confounding-exaggeration trade-off theoretically and using realistic Monte Carlo simulations replicating prevailing identification strategies and document its prevalence in the literature. I then discuss potential avenues to address this issue.</p>
 </div>
 <p><br /></p>
 <div style="display: flex; align-items: center; justify-content: space-between;">
