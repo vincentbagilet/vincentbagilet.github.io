@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  26 NOV 2025 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  4 DEC 2025 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1181,16 +1181,16 @@ al/texlive/2023/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}{/usr/local/texliv
 e/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/te
 xlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}]
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 235.
+(Font)              scaled to size 12.0pt on input line 236.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 235.
+(Font)              scaled to size 12.0pt on input line 236.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 286.
+(Font)              scaled to size 10.95pt on input line 287.
  [2]
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 355.
+(Font)              <6> on input line 365.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 365.
  [3] (./CV_Vincent_Bagilet.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1208,16 +1208,16 @@ Here is how much of TeX's memory you used:
  53361 multiletter control sequences out of 15000+600000
  783370 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,118p,1331b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,118p,1163b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesom
 e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.p
 fb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pf
 b>
-Output written on CV_Vincent_Bagilet.pdf (3 pages, 111047 bytes).
+Output written on CV_Vincent_Bagilet.pdf (3 pages, 111615 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
