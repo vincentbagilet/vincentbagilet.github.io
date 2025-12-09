@@ -112,6 +112,34 @@ abstract_small_effects <-
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 
 ::: {.column width="40%"}
+![](images/documentary.jpg){width=100%}
+:::
+
+::: {.column width="57%"}
+Climate Change Narratives:<br />Environmental News in French Newscasts
+
+Joint with [Elisa Mougin](https://sites.google.com/view/emougin/home?authuser=0)
+:::
+::::
+
+
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+
+::: {.column width="40%"}
+![](images/field.jpg){width=100%}
+:::
+
+::: {.column width="57%"}
+Geopolitical Shocks and Environmental Discourse in Agriculture
+
+Joint with [Mathieu Couttenier](https://sites.google.com/site/coutteniermathieu/home), [Sophie Hatte](https://sites.google.com/site/sophiehatte/), and [Elisa Mougin](https://sites.google.com/view/emougin/home?authuser=0)
+:::
+::::
+
+
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+
+::: {.column width="40%"}
 ![](images/vote_ladies.jpg){width=100%}
 :::
 
@@ -122,18 +150,6 @@ Joint with [Jade Ponsard](https://jadeponsard.github.io/)
 :::
 ::::
 
-:::: {style="display: flex; align-items: center; justify-content: space-between;"}
-
-::: {.column width="40%"}
-![](images/documentary.jpg){width=100%}
-:::
-
-::: {.column width="57%"}
-Climate Change Narratives:<br />Environmental News in French Newscasts
-
-Joint with [Elisa Mougin](https://sites.google.com/view/emougin/home?authuser=0)
-:::
-::::
 
 
 

@@ -38,7 +38,7 @@ Undergrad level (L3), half course
 ::: {.column width="57%"}
 [Topics in Econometrics](https://vincentbagilet.github.io/metrics_m2/) 
 
-Grad level (M2), half course
+Grad level (M2)
 
 :::
 ::::
