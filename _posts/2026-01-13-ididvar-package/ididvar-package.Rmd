@@ -1,0 +1,90 @@
+---
+title: "ididvar"
+description: |
+  I made a R package providing tools to easily identify the identifying variation in a regression, specifically in applied economics analyses.
+preview: idid_hex_small.png
+categories:
+  - R
+  - Causal inference
+  - Package
+date: 2025-12-02
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+## Overview
+
+The `ididvar` is a package that provides tools to **easily compute and visualize the contribution of each observation or group of observations to the causal estimate** of a  parameter of interest in a regression. More details and use cases are available on the [**package's website**](https://vincentbagilet.github.io/ididvar/).
+
+This package is built as part of a [research project](https://vincentbagilet.github.io/causal_exaggeration/). As such, the [associated paper](https://vincentbagilet.github.io/causal_exaggeration/causal_exaggeration_paper.pdf) provides a detailed scientific description of its content and of its underpinnings. A quick overview of the maths and theory behind this package is available [here](https://vincentbagilet.github.io/ididvar/articles/background.html). In a nutshell, the package builds on existing influence measures, in particular leverage. Such measures are concerned with the whole vector of par In applied econometrics, we are often interested in the estimate of one (or a few) parameter and not the whole vector of parameters. The package facilitates the computation of leverage **after controls and fixed-effects have been partialled out**, thus defining observation level weights that I call *identifying variation weights*.
+
+**The package is under active development and some functions may not work perfectly, yet.** Feedback and contributions are thus more than welcome. If you find a bug or if the package does not work on your specific case, do not hesitate to [create a new issue on Github](https://github.com/vincentbagilet/ididvar/issues/new) or send me an email at [vincent.bagilet@ens-lyon.fr](vincent.bagilet@ens-lyon.fr).
+
+## Example
+
+To illustrate this briefly (see the [package's website](https://vincentbagilet.github.io/ididvar/) for more examples), let's use the Gapminder dataset and regress life expectancy on the log of GDP per capita and country fixed effects and compute the distribution of the identifying variation weights across years:
+
+```{r reg, code_folding=TRUE}
+library(ididvar)
+library(gapminder)
+library(fixest)
+library(tidyverse)
+library(knitr)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+
+gapminder_ext <- gapminder |> 
+  dplyr::mutate(
+    l_gdpPercap = log(gdpPercap), 
+    decade = year %/% 10 * 10
+  ) |> 
+  dplyr::filter(continent %in% c("Africa", "Europe")) |>
+  dplyr::left_join(gapminder::country_codes, by = join_by(country))
+
+reg <- feols(data = gapminder_ext, lifeExp ~ l_gdpPercap | country, cluster = "country")
+
+idid_viz_weights(reg, "l_gdpPercap", var_x = decade) +
+  labs(x = NULL) 
+```
+
+As such, not all observations contribute to identification. We can drop many observations from the regression without changing the point estimate and s.e. by more than 5%. The effective sample is much smaller than the nominal sample and is not representative, posing external validity threats.
+
+```{r contrib, code_folding=TRUE, fig.asp=0.9}
+#| code-fold: true
+
+idid_viz_contrib(reg, "l_gdpPercap", decade, order = "y") +
+  facet_grid(continent ~ ., scales = "free_y", space = "free_y") +
+  theme(strip.text.y = element_text(angle = 0)) +
+  labs(x = NULL) 
+
+idid_contrib_stats(reg, "l_gdpPercap") |>
+  kable(
+    col.names =
+      c("Initial number of obs.",
+        "Nominal number of obs.",
+        "Effective number of obs.",
+        "Proportion of obs. in the effective sample")
+  )
+```
+
+
+Similarly, not all countries contribute equally to the identification of the effect of interest:
+
+```{r map, code_folding=TRUE, fig.asp=1.2}
+#| code-fold: true
+
+world_sf <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") |> 
+  mutate(iso_alpha = adm0_a3)
+
+#define a projection
+proj_globe <-
+  coord_sf(crs = "+proj=ortho +lon_0=30 +lat_0=28", expand = FALSE) 
+
+idid_viz_contrib_map(reg, "l_gdpPercap", world_sf, "iso_alpha") +
+  proj_globe +
+  theme(panel.grid.major = element_line(colour = "gray90")) 
+```
+
+

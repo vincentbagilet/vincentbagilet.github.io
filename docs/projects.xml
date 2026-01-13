@@ -12,7 +12,18 @@
       <link>https://vincentbagilet.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>ididvar</title>
+      <link>https://vincentbagilet.github.io/posts/2026-01-13-ididvar-package</link>
+      <description>I made a R package providing tools to easily identify the identifying variation in a regression, specifically in applied economics analyses.</description>
+      <category>R</category>
+      <category>Causal inference</category>
+      <category>Package</category>
+      <guid>https://vincentbagilet.github.io/posts/2026-01-13-ididvar-package</guid>
+      <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://vincentbagilet.github.io/posts/2026-01-13-ididvar-package/idid_hex_small.png" medium="image" type="image/png" width="720" height="537"/>
+    </item>
     <item>
       <title>Rallicagram</title>
       <link>https://vincentbagilet.github.io/posts/2023-05-15-rallicagram</link>

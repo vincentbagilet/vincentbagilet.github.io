@@ -1,5 +1,23 @@
 [
   {
+    "path": "posts/2026-01-13-ididvar-package/",
+    "title": "ididvar",
+    "description": "I made a R package providing tools to easily identify the identifying variation in a regression, specifically in applied economics analyses.",
+    "author": [],
+    "date": "2025-12-02",
+    "categories": [
+      "R",
+      "Causal inference",
+      "Package"
+    ],
+    "contents": "\nOverview\nThe ididvar is a package that provides tools to easily compute and visualize the contribution of each observation or group of observations to the causal estimate of a parameter of interest in a regression. More details and use cases are available on the package’s website.\nThis package is built as part of a research project. As such, the associated paper provides a detailed scientific description of its content and of its underpinnings. A quick overview of the maths and theory behind this package is available here. In a nutshell, the package builds on existing influence measures, in particular leverage. Such measures are concerned with the whole vector of par In applied econometrics, we are often interested in the estimate of one (or a few) parameter and not the whole vector of parameters. The package facilitates the computation of leverage after controls and fixed-effects have been partialled out, thus defining observation level weights that I call identifying variation weights.\nThe package is under active development and some functions may not work perfectly, yet. Feedback and contributions are thus more than welcome. If you find a bug or if the package does not work on your specific case, do not hesitate to create a new issue on Github or send me an email at vincent.bagilet@ens-lyon.fr.\nExample\nTo illustrate this briefly (see the package’s website for more examples), let’s use the Gapminder dataset and regress life expectancy on the log of GDP per capita and country fixed effects and compute the distribution of the identifying variation weights across years:\n\n\nShow code\n\nlibrary(ididvar)\nlibrary(gapminder)\nlibrary(fixest)\nlibrary(tidyverse)\nlibrary(knitr)\nlibrary(rnaturalearth)\nlibrary(rnaturalearthdata)\nlibrary(sf)\n\ngapminder_ext <- gapminder |> \n  dplyr::mutate(\n    l_gdpPercap = log(gdpPercap), \n    decade = year %/% 10 * 10\n  ) |> \n  dplyr::filter(continent %in% c(\"Africa\", \"Europe\")) |>\n  dplyr::left_join(gapminder::country_codes, by = join_by(country))\n\nreg <- feols(data = gapminder_ext, lifeExp ~ l_gdpPercap | country, cluster = \"country\")\n\nidid_viz_weights(reg, \"l_gdpPercap\", var_x = decade) +\n  labs(x = NULL) \n\n\n\nAs such, not all observations contribute to identification. We can drop many observations from the regression without changing the point estimate and s.e. by more than 5%. The effective sample is much smaller than the nominal sample and is not representative, posing external validity threats.\n\n\nShow code\n\nidid_viz_contrib(reg, \"l_gdpPercap\", decade, order = \"y\") +\n  facet_grid(continent ~ ., scales = \"free_y\", space = \"free_y\") +\n  theme(strip.text.y = element_text(angle = 0)) +\n  labs(x = NULL) \n\n\nShow code\n\nidid_contrib_stats(reg, \"l_gdpPercap\") |>\n  kable(\n    col.names =\n      c(\"Initial number of obs.\",\n        \"Nominal number of obs.\",\n        \"Effective number of obs.\",\n        \"Proportion of obs. in the effective sample\")\n  )\n\nInitial number of obs.\nNominal number of obs.\nEffective number of obs.\nProportion of obs. in the effective sample\n984\n984\n246\n0.25\n\nSimilarly, not all countries contribute equally to the identification of the effect of interest:\n\n\nShow code\n\nworld_sf <- rnaturalearth::ne_countries(scale = \"medium\", returnclass = \"sf\") |> \n  mutate(iso_alpha = adm0_a3)\n\n#define a projection\nproj_globe <-\n  coord_sf(crs = \"+proj=ortho +lon_0=30 +lat_0=28\", expand = FALSE) \n\nidid_viz_contrib_map(reg, \"l_gdpPercap\", world_sf, \"iso_alpha\") +\n  proj_globe +\n  theme(panel.grid.major = element_line(colour = \"gray90\")) \n\n\n\n\n\n\n",
+    "preview": "posts/2026-01-13-ididvar-package/idid_hex_small.png",
+    "last_modified": "2026-01-13T14:51:25+01:00",
+    "input_file": {},
+    "preview_width": 720,
+    "preview_height": 537
+  },
+  {
     "path": "posts/2023-05-15-rallicagram/",
     "title": "Rallicagram",
     "description": "I made a R wrapper for the Gallicagram API that provides direct access to a set of French corpora and enables to easily run NLP analyses on these corpora.",
