@@ -107,7 +107,7 @@ abstract_small_effects <-
 <br />
 <br />
 
-## Work in progress
+## Selected work in progress
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 
