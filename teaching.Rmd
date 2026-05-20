@@ -24,7 +24,7 @@ opts_chunk$set(fig.path = "images/",
 :::
 
 ::: {.column width="57%"}
-[Introduction to Empirical Environmental Economics](https://vincentbagilet.github.io/env_econ_cpes/) 
+[Empirical Environmental Economics](https://vincentbagilet.github.io/env_econ_cpes/) 
 
 Undergrad level (L3), half course
 :::
