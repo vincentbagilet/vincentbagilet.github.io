@@ -59,7 +59,7 @@ Grad level (M2), module of the *Machine Learning and Big Data Analysis* course
 
 ### ENS de Lyon
 
-- [Data Visualization for Economics Research](https://vincentbagilet.github.io/data_viz_summer/) (PhD level - Summer School course - 2025)
+- [Data Visualization for Economics Research](https://vincentbagilet.github.io/data_viz_summer/) (PhD level - Summer School lecture - 2025-2026)
 - [Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/) (Grad level - Half course - 2024)
 
 ### Columbia University (TA)
