@@ -32,7 +32,7 @@ Undergrad level (L3), half course
 
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
-[![](images/balcony.jpg){width=100% fig-alt="Simulations = repetition, reptetion. Photo by Nick Fewings on Unsplash.com"}](https://vincentbagilet.github.io/metrics_m2/)
+[![](images/tools_crop.jpg){width=100% fig-alt="Econometrics = a set of tools for applied economics analyses. Photo by Anton Savinov on Unsplash.com"}](https://vincentbagilet.github.io/metrics_m2/)
 :::
 
 ::: {.column width="57%"}
@@ -55,11 +55,22 @@ Grad level (M2), module of the *Machine Learning and Big Data Analysis* course
 :::
 ::::
 
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+::: {.column width="40%"}
+[![](images/paper_graph.jpg){width=100% fig-alt="Photo by Isaac Smith on Unsplash.com"}](https://vincentbagilet.github.io/tada_m2/)
+:::
+
+::: {.column width="57%"}
+[Data Visualization for Economics Research](https://vincentbagilet.github.io/data_viz_summer/) 
+
+PhD level, Summer School lecture, 2025 and 2026
+:::
+::::
+
 ## Past Teaching
 
 ### ENS de Lyon
 
-- [Data Visualization for Economics Research](https://vincentbagilet.github.io/data_viz_summer/) (PhD level - Summer School lecture - 2025-2026)
 - [Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/) (Grad level - Half course - 2024)
 
 ### Columbia University (TA)
