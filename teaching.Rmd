@@ -55,6 +55,10 @@ Grad level (M2), module of the *Machine Learning and Big Data Analysis* course
 :::
 ::::
 
+## Past Teaching
+
+### ENS de Lyon
+
 :::: {style="display: flex; align-items: center; justify-content: space-between;"}
 ::: {.column width="40%"}
 [![](images/paper_graph.jpg){width=100% fig-alt="Photo by Isaac Smith on Unsplash.com"}](https://vincentbagilet.github.io/tada_m2/)
@@ -67,11 +71,17 @@ PhD level, Summer School lecture, 2025 and 2026
 :::
 ::::
 
-## Past Teaching
+:::: {style="display: flex; align-items: center; justify-content: space-between;"}
+::: {.column width="40%"}
+[![](images/toolbox.jpg){width=100% fig-alt="Photo by Quality Pixels on Unsplash.com"}](https://vincentbagilet.github.io/metrics_m1_2024/)
+:::
 
-### ENS de Lyon
+::: {.column width="57%"}
+[Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/)
 
-- [Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/) (Grad level - Half course - 2024)
+Grad level (M1), half course - 2024
+:::
+::::
 
 ### Columbia University (TA)
 

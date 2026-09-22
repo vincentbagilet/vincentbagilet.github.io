@@ -51,7 +51,7 @@ abstract_causal_exagg <-
   readr::read_file(
     here::here(
       "..",
-      "causal_exaggeration",
+      "causal_exaggeration_dvpt",
       "paper",
       "current_version",
       "abstract",
