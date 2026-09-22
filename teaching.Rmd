@@ -27,6 +27,8 @@ opts_chunk$set(fig.path = "images/",
 [Empirical Environmental Economics](https://vincentbagilet.github.io/env_econ_cpes/) 
 
 Undergrad level (L3), half course
+
+2024/2025 onwards
 :::
 ::::
 
@@ -40,6 +42,7 @@ Undergrad level (L3), half course
 
 Grad level (M2)
 
+2024/2025 onwards
 :::
 ::::
 
@@ -52,6 +55,8 @@ Grad level (M2)
 [Text as Data](https://vincentbagilet.github.io/tada_m2/)
 
 Grad level (M2), module of the *Machine Learning and Big Data Analysis* course
+
+2024/2025 onwards
 :::
 ::::
 
@@ -67,7 +72,9 @@ Grad level (M2), module of the *Machine Learning and Big Data Analysis* course
 ::: {.column width="57%"}
 [Data Visualization for Economics Research](https://vincentbagilet.github.io/data_viz_summer/) 
 
-PhD level, Summer School lecture, 2025 and 2026
+PhD level, Summer School lecture
+
+2025 and 2026
 :::
 ::::
 
@@ -79,7 +86,9 @@ PhD level, Summer School lecture, 2025 and 2026
 ::: {.column width="57%"}
 [Econometrics 1](https://vincentbagilet.github.io/metrics_m1_2024/)
 
-Grad level (M1), half course - 2024
+Grad level (M1), half course
+
+2024/2025
 :::
 ::::
 
