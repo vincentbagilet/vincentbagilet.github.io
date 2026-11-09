@@ -21,7 +21,7 @@ My main research interests center on **environmental discourse** and on individu
 
 I am especially enthusiastic about the use of **text data** to analyze environment-related issues. I also enjoy working on projects that allow me to develop my knowledge of **causal inference** and **data visualization**.
 
-<!-- Prior to joining Columbia, I earned masters in [Quantitative Economics from the Paris School of Economics](https://www.parisschoolofeconomics.eu/en/teaching/masters-program/ppd-public-policy-and-development/), in [Environmental Economics from University Paris Saclay/AgroParisTech](https://www.universite-paris-saclay.fr/en/education/master/environmental-energy-and-transport-economics#presentation) and in Engineering with a specialization in Energy from [Ecole Centrale Lyon](https://www.ec-lyon.fr/en). -->
+<!--  Prior to joining Columbia, I earned masters in [Quantitative Economics from the Paris School of Economics](https://www.parisschoolofeconomics.eu/en/teaching/masters-program/ppd-public-policy-and-development/), in [Environmental Economics from University Paris Saclay/AgroParisTech](https://www.universite-paris-saclay.fr/en/education/master/environmental-energy-and-transport-economics#presentation) and in Engineering with a specialization in Energy from [Ecole Centrale Lyon](https://www.ec-lyon.fr/en). -->
 
 
 
